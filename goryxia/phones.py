@@ -75,9 +75,20 @@ def extraer_numeros(*valores: str) -> tuple[list[str], list[str]]:
 
     Devuelve ``(moviles, fijos)`` en formato ``57XXXXXXXXXX``, sin duplicados y
     preservando el orden de aparicion.
+
+    Los tags de OSM en Colombia vienen escritos de todas las formas
+    imaginables: ``3201234567``, ``320 123 4567 - 310 987 6543``,
+    ``Tel 601 2345678 Cel 320 1234567``... Por eso, cuando un fragmento no
+    encaja como un unico numero, se rastrea como texto libre en vez de
+    descartarlo: de otro modo un guion entre dos celulares hace perder ambos.
     """
     moviles: list[str] = []
     fijos: list[str] = []
+
+    def agregar(numero: str, tipo: str) -> None:
+        destino = moviles if tipo == "movil" else fijos
+        if numero not in destino:
+            destino.append(numero)
 
     for valor in valores:
         if not valor:
@@ -86,13 +97,18 @@ def extraer_numeros(*valores: str) -> tuple[list[str], list[str]]:
             parte = parte.strip()
             if not parte:
                 continue
+
             resultado = normalizar_numero(parte)
-            if resultado is None:
+            if resultado is not None:
+                agregar(*resultado)
                 continue
-            numero, tipo = resultado
-            destino = moviles if tipo == "movil" else fijos
-            if numero not in destino:
-                destino.append(numero)
+
+            # El fragmento no es un numero suelto: puede traer varios juntos,
+            # o texto mezclado ("Tel ... Cel ...").
+            for numero in buscar_numeros_en_texto(parte)[0]:
+                agregar(numero, "movil")
+            for numero in buscar_numeros_en_texto(parte)[1]:
+                agregar(numero, "fijo")
 
     return moviles, fijos
 

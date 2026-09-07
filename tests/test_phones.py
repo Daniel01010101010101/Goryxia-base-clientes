@@ -45,6 +45,24 @@ class TestExtraccion(unittest.TestCase):
         moviles, _ = phones.extraer_numeros("3001234567", "+57 300 123 4567")
         self.assertEqual(moviles, ["573001234567"])
 
+    def test_separador_guion_no_pierde_los_numeros(self):
+        # Formato habitual en OSM Colombia. Antes se perdian LOS DOS numeros:
+        # al limpiar los separadores quedaba una cadena de 20 digitos.
+        moviles, _ = phones.extraer_numeros("320 123 4567 - 310 987 6543")
+        self.assertEqual(moviles, ["573201234567", "573109876543"])
+
+    def test_texto_mezclado_con_etiquetas(self):
+        moviles, fijos = phones.extraer_numeros("Tel 601 2345678 Cel 320 1234567")
+        self.assertEqual(moviles, ["573201234567"])
+        self.assertEqual(fijos, ["576012345678"])
+
+    def test_extension_no_contamina_el_numero(self):
+        moviles, _ = phones.extraer_numeros("3201234567 ext 102")
+        self.assertEqual(moviles, ["573201234567"])
+
+    def test_un_valor_sin_numeros_no_aporta_nada(self):
+        self.assertEqual(phones.extraer_numeros("sin numero aqui"), ([], []))
+
     def test_busca_en_texto_libre(self):
         texto = "Llamanos al 320 456 7890 o al (601) 742 1122. NIT 900123456-7"
         moviles, fijos = phones.buscar_numeros_en_texto(texto)
