@@ -1,0 +1,127 @@
+name: Generar base de clientes
+
+# Ejecuta el pipeline completo en un runner de GitHub, que si tiene salida
+# libre a Internet (Overpass API, Datos Abiertos y los sitios web de los
+# negocios). Los archivos quedan como artefactos descargables y, si se pide,
+# se publican tambien en el repositorio.
+
+on:
+  workflow_dispatch:
+    inputs:
+      alcance:
+        description: "Cobertura geografica"
+        type: choice
+        default: "todas"
+        options:
+          - "todas"
+          - "prioritarias"
+      categorias:
+        description: "Categorias"
+        type: choice
+        default: "todas"
+        options:
+          - "todas"
+          - "muy-alta-prioridad"
+      raspar_webs:
+        description: "Analizar sitios web para conseguir mas celulares (mas lento)"
+        type: boolean
+        default: true
+      max_webs:
+        description: "Maximo de sitios web a analizar"
+        type: string
+        default: "4000"
+      solo_contactables:
+        description: "Exportar solo negocios con celular, fijo o correo"
+        type: boolean
+        default: false
+      publicar_en_repo:
+        description: "Commitear los archivos generados en la rama"
+        type: boolean
+        default: false
+
+  # Refresco mensual automatico. Descomentar para activarlo.
+  # schedule:
+  #   - cron: "0 6 1 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Restaurar cache de descargas
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: goryxia-cache-${{ github.run_id }}
+          restore-keys: goryxia-cache-
+
+      - name: Ejecutar pruebas
+        run: python -m unittest discover -s tests
+
+      - name: Generar la base
+        env:
+          # Opcionales: definir como secretos del repositorio si se usan.
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+          GORYXIA_SOCRATA_DATASETS: ${{ vars.GORYXIA_SOCRATA_DATASETS }}
+        run: |
+          set -o pipefail
+          ARGS=""
+          [ "${{ inputs.alcance }}" = "prioritarias" ] && ARGS="$ARGS --prioritarias"
+          [ "${{ inputs.categorias }}" = "muy-alta-prioridad" ] && ARGS="$ARGS --muy-alta-prioridad"
+          [ "${{ inputs.raspar_webs }}" != "true" ] && ARGS="$ARGS --sin-web"
+          [ "${{ inputs.solo_contactables }}" = "true" ] && ARGS="$ARGS --solo-contactables"
+          ARGS="$ARGS --max-webs ${{ inputs.max_webs }}"
+          echo "Ejecutando: python -m goryxia $ARGS"
+          python -m goryxia $ARGS | tee corrida.log
+
+      - name: Resumen de la corrida
+        if: always()
+        run: |
+          {
+            echo "## Base de clientes GoryxIA"
+            echo '```'
+            tail -n 40 corrida.log 2>/dev/null || echo "Sin log disponible"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publicar archivos como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: base-clientes-goryxia
+          path: |
+            data/Base_Clientes_GoryxIA.xlsx
+            data/Base_Clientes_GoryxIA.csv
+            data/Base_Clientes_GoryxIA.pdf
+            data/clientes.geojson
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Commitear los resultados en la rama
+        if: inputs.publicar_en_repo == true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/Base_Clientes_GoryxIA.* data/clientes.geojson
+          if git diff --cached --quiet; then
+            echo "Sin cambios que publicar"
+          else
+            git commit -m "Actualizar base de clientes GoryxIA ($(date +%Y-%m-%d))"
+            git push origin HEAD:${{ github.ref_name }}
+          fi

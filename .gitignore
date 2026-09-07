@@ -1,0 +1,19 @@
+# Cache de descargas (Overpass, barrios, sitios web). Se regenera sola.
+data/cache/
+
+# Base de produccion: se genera con `python -m goryxia` o con el workflow
+# "Generar base de clientes". No se versiona porque cambia en cada corrida
+# y puede pesar decenas de MB.
+data/Base_Clientes_GoryxIA.xlsx
+data/Base_Clientes_GoryxIA.csv
+data/Base_Clientes_GoryxIA.pdf
+data/clientes.geojson
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/

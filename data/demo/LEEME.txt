@@ -1,0 +1,10 @@
+Los archivos de esta carpeta son una MUESTRA DE FORMATO generada a partir de
+datos sinteticos (tests/fixtures/overpass_demo.json). Los negocios NO existen:
+todos los nombres empiezan por "DEMO" y los telefonos usan el rango de pruebas
+300 000 XXXX.
+
+Para generar la base real de PYMEs de Bogota, con datos de OpenStreetMap:
+
+    python -m goryxia
+
+Eso escribe los archivos definitivos en data/ (sin el prefijo DEMO_).

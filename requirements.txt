@@ -1,0 +1,7 @@
+# Dependencias del generador de base de clientes GoryxIA
+requests>=2.31,<3
+openpyxl>=3.1,<4
+reportlab>=4.0,<5
+
+# Opcionales: analisis y exploracion de la base ya generada.
+# pandas>=2.0

@@ -1,0 +1,5406 @@
+{
+ "version": 0.6,
+ "generator": "fixture sintetica GoryxIA",
+ "elements": [
+  {
+   "type": "way",
+   "id": 1000000,
+   "lat": 4.592953,
+   "lon": -74.203966,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 000",
+    "addr:street": "Calle 167 Sur",
+    "addr:housenumber": "7-19",
+    "website": "https://demo-odontologia-0.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000001,
+   "lat": 4.609627,
+   "lon": -74.147958,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 001",
+    "addr:street": "Calle 16 Sur",
+    "addr:housenumber": "73-25",
+    "contact:facebook": "demoveterinaria1",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000002,
+   "lat": 4.532267,
+   "lon": -74.174673,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 002",
+    "addr:street": "Calle 108 Sur",
+    "addr:housenumber": "19-79",
+    "contact:mobile": "+57 300 000 6054",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000003,
+   "lat": 4.578484,
+   "lon": -74.137425,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 003",
+    "addr:street": "Calle 159 Sur",
+    "addr:housenumber": "27-73"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000004,
+   "lat": 4.67796,
+   "lon": -74.160236,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 004",
+    "addr:street": "Calle 148 Sur",
+    "addr:housenumber": "39-77",
+    "email": "contacto@demo-estetica-4.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000005,
+   "lat": 4.693682,
+   "lon": -74.092669,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 005",
+    "addr:street": "Calle 108 Sur",
+    "addr:housenumber": "6-95",
+    "contact:mobile": "+57 300 000 6140",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000006,
+   "lat": 4.610798,
+   "lon": -74.102118,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 006",
+    "addr:street": "Calle 17 Sur",
+    "addr:housenumber": "8-99",
+    "phone": "+57 601 791 8301",
+    "email": "contacto@demo-restaurante-6.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000007,
+   "lat": 4.734684,
+   "lon": -74.097642,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 007",
+    "addr:street": "Calle 74 Sur",
+    "addr:housenumber": "17-41",
+    "phone": "+57 601 708 2320",
+    "website": "https://demo-cafeteria-7.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000008,
+   "lat": 4.728256,
+   "lon": -74.010541,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 008",
+    "addr:street": "Calle 175 Sur",
+    "addr:housenumber": "49-39",
+    "contact:mobile": "+57 300 000 3887",
+    "website": "https://demo-panaderia-8.example.com",
+    "contact:facebook": "demopanaderia8",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000009,
+   "lat": 4.635827,
+   "lon": -74.048616,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 009",
+    "addr:street": "Calle 157 Sur",
+    "addr:housenumber": "73-50",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000010,
+   "lat": 4.611199,
+   "lon": -74.175019,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 010",
+    "addr:street": "Calle 144 Sur",
+    "addr:housenumber": "51-60",
+    "phone": "+57 601 306 8889",
+    "contact:instagram": "@demoinmobiliaria10",
+    "contact:facebook": "demoinmobiliaria10",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000011,
+   "lat": 4.602103,
+   "lon": -74.169991,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 011",
+    "addr:street": "Calle 39 Sur",
+    "addr:housenumber": "69-22",
+    "contact:instagram": "@democontaduria11"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000012,
+   "lat": 4.534091,
+   "lon": -74.161034,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 012",
+    "addr:street": "Calle 30 Sur",
+    "addr:housenumber": "63-69",
+    "contact:instagram": "@demoabogados12"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000013,
+   "lat": 4.570653,
+   "lon": -74.151791,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 013",
+    "addr:street": "Calle 136 Sur",
+    "addr:housenumber": "47-28",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000014,
+   "lat": 4.670736,
+   "lon": -74.13367,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 014",
+    "addr:street": "Calle 92 Sur",
+    "addr:housenumber": "99-38"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000015,
+   "lat": 4.712243,
+   "lon": -74.097267,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 015",
+    "addr:street": "Calle 59 Sur",
+    "addr:housenumber": "26-76",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000016,
+   "lat": 4.613771,
+   "lon": -74.097657,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 016",
+    "addr:street": "Calle 90 Sur",
+    "addr:housenumber": "47-20",
+    "phone": "+57 300 000 4716",
+    "operator": "DEMO Operador 12"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000017,
+   "lat": 4.761986,
+   "lon": -74.096609,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 017",
+    "addr:street": "Calle 170 Sur",
+    "addr:housenumber": "16-59"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000018,
+   "lat": 4.738866,
+   "lon": -74.034166,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 018",
+    "addr:street": "Calle 103 Sur",
+    "addr:housenumber": "96-20",
+    "website": "https://demo-ropa-18.example.com",
+    "contact:instagram": "@demoropa18"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000019,
+   "lat": 4.66306,
+   "lon": -74.030788,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 019",
+    "addr:street": "Calle 169 Sur",
+    "addr:housenumber": "45-29",
+    "website": "https://demo-celulares-19.example.com",
+    "contact:instagram": "@democelulares19"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000020,
+   "lat": 4.597352,
+   "lon": -74.17513,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 020",
+    "addr:street": "Calle 55 Sur",
+    "addr:housenumber": "4-42",
+    "phone": "+57 300 000 9211",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000021,
+   "lat": 4.614151,
+   "lon": -74.151674,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 021",
+    "addr:street": "Calle 150 Sur",
+    "addr:housenumber": "67-63",
+    "contact:instagram": "@demoveterinaria21"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000022,
+   "lat": 4.534342,
+   "lon": -74.148958,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 022",
+    "addr:street": "Calle 39 Sur",
+    "addr:housenumber": "23-28"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000023,
+   "lat": 4.554244,
+   "lon": -74.137588,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 023",
+    "addr:street": "Calle 64 Sur",
+    "addr:housenumber": "25-45",
+    "contact:mobile": "+57 300 000 2601"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000024,
+   "lat": 4.670222,
+   "lon": -74.149514,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 024",
+    "addr:street": "Calle 178 Sur",
+    "addr:housenumber": "36-67"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000025,
+   "lat": 4.716911,
+   "lon": -74.09429,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 025",
+    "addr:street": "Calle 52 Sur",
+    "addr:housenumber": "58-27",
+    "phone": "+57 601 601 8243"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000026,
+   "lat": 4.631077,
+   "lon": -74.09242,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 026",
+    "addr:street": "Calle 165 Sur",
+    "addr:housenumber": "85-56",
+    "contact:mobile": "+57 300 000 3248"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000027,
+   "lat": 4.763298,
+   "lon": -74.093541,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 027",
+    "addr:street": "Calle 111 Sur",
+    "addr:housenumber": "66-61",
+    "phone": "+57 601 400 6842",
+    "contact:facebook": "democafeteria27",
+    "operator": "DEMO Operador 11"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000028,
+   "lat": 4.720697,
+   "lon": -74.038182,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 028",
+    "addr:street": "Calle 17 Sur",
+    "addr:housenumber": "15-39",
+    "website": "https://demo-panaderia-28.example.com",
+    "contact:facebook": "demopanaderia28"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000029,
+   "lat": 4.64689,
+   "lon": -74.033543,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 029",
+    "addr:street": "Calle 67 Sur",
+    "addr:housenumber": "52-29"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000030,
+   "lat": 4.615811,
+   "lon": -74.199243,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 030",
+    "addr:street": "Calle 5 Sur",
+    "addr:housenumber": "82-21",
+    "website": "https://demo-inmobiliaria-30.example.com",
+    "contact:facebook": "demoinmobiliaria30"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000031,
+   "lat": 4.622123,
+   "lon": -74.132933,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 031",
+    "addr:street": "Calle 69 Sur",
+    "addr:housenumber": "80-26",
+    "contact:mobile": "+57 300 000 4906"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000032,
+   "lat": 4.531243,
+   "lon": -74.171765,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 032",
+    "addr:street": "Calle 115 Sur",
+    "addr:housenumber": "65-96",
+    "contact:mobile": "+57 300 000 6685",
+    "contact:facebook": "demoabogados32",
+    "email": "contacto@demo-abogados-32.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000033,
+   "lat": 4.570569,
+   "lon": -74.150173,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 033",
+    "addr:street": "Calle 115 Sur",
+    "addr:housenumber": "14-94"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000034,
+   "lat": 4.689298,
+   "lon": -74.156292,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 034",
+    "addr:street": "Calle 163 Sur",
+    "addr:housenumber": "18-61",
+    "contact:facebook": "demodrogueria34"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000035,
+   "lat": 4.682216,
+   "lon": -74.103391,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 035",
+    "addr:street": "Calle 98 Sur",
+    "addr:housenumber": "65-95",
+    "contact:facebook": "demopapeleria35",
+    "operator": "DEMO Operador 12"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000036,
+   "lat": 4.638471,
+   "lon": -74.091095,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 036",
+    "addr:street": "Calle 141 Sur",
+    "addr:housenumber": "42-41",
+    "contact:mobile": "+57 300 000 6071",
+    "website": "https://demo-floristeria-36.example.com",
+    "email": "contacto@demo-floristeria-36.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000037,
+   "lat": 4.739927,
+   "lon": -74.06895,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 037",
+    "addr:street": "Calle 24 Sur",
+    "addr:housenumber": "34-21",
+    "contact:mobile": "+57 300 000 1682",
+    "email": "contacto@demo-minimercado-37.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000038,
+   "lat": 4.70621,
+   "lon": -74.014288,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 038",
+    "addr:street": "Calle 153 Sur",
+    "addr:housenumber": "50-51"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000039,
+   "lat": 4.650519,
+   "lon": -74.05283,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 039",
+    "addr:street": "Calle 180 Sur",
+    "addr:housenumber": "65-27",
+    "email": "contacto@demo-celulares-39.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000040,
+   "lat": 4.608447,
+   "lon": -74.171757,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 040",
+    "addr:street": "Calle 165 Sur",
+    "addr:housenumber": "30-20",
+    "contact:mobile": "+57 300 000 3180",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 18"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000041,
+   "lat": 4.627227,
+   "lon": -74.150428,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 041",
+    "addr:street": "Calle 1 Sur",
+    "addr:housenumber": "59-18",
+    "email": "contacto@demo-veterinaria-41.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000042,
+   "lat": 4.512978,
+   "lon": -74.169378,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 042",
+    "addr:street": "Calle 53 Sur",
+    "addr:housenumber": "30-93"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000043,
+   "lat": 4.575711,
+   "lon": -74.156901,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 043",
+    "addr:street": "Calle 38 Sur",
+    "addr:housenumber": "43-42"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000044,
+   "lat": 4.653981,
+   "lon": -74.161292,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 044",
+    "addr:street": "Calle 126 Sur",
+    "addr:housenumber": "38-76",
+    "phone": "+57 300 000 8633",
+    "contact:instagram": "@demoestetica44"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000045,
+   "lat": 4.6807,
+   "lon": -74.111641,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 045",
+    "addr:street": "Calle 130 Sur",
+    "addr:housenumber": "58-44",
+    "phone": "+57 601 415 2222",
+    "contact:instagram": "@demogimnasio45",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000046,
+   "lat": 4.62035,
+   "lon": -74.094526,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 046",
+    "addr:street": "Calle 94 Sur",
+    "addr:housenumber": "30-73",
+    "contact:instagram": "@demorestaurante46",
+    "contact:facebook": "demorestaurante46"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000047,
+   "lat": 4.735628,
+   "lon": -74.086242,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 047",
+    "addr:street": "Calle 81 Sur",
+    "addr:housenumber": "16-52",
+    "contact:mobile": "+57 300 000 6542",
+    "contact:instagram": "@democafeteria47"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000048,
+   "lat": 4.714889,
+   "lon": -74.034284,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 048",
+    "addr:street": "Calle 151 Sur",
+    "addr:housenumber": "10-56",
+    "email": "contacto@demo-panaderia-48.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000049,
+   "lat": 4.635957,
+   "lon": -74.031158,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 049",
+    "addr:street": "Calle 112 Sur",
+    "addr:housenumber": "66-50",
+    "phone": "+57 300 000 7116",
+    "contact:facebook": "democonsultorio49"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000050,
+   "lat": 4.602166,
+   "lon": -74.201863,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 050",
+    "addr:street": "Calle 21 Sur",
+    "addr:housenumber": "7-62",
+    "email": "contacto@demo-inmobiliaria-50.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000051,
+   "lat": 4.618887,
+   "lon": -74.156253,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 051",
+    "addr:street": "Calle 77 Sur",
+    "addr:housenumber": "33-93",
+    "phone": "+57 300 000 4910",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000052,
+   "lat": 4.546238,
+   "lon": -74.160117,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 052",
+    "addr:street": "Calle 57 Sur",
+    "addr:housenumber": "58-52",
+    "contact:instagram": "@demoabogados52",
+    "email": "contacto@demo-abogados-52.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000053,
+   "lat": 4.559565,
+   "lon": -74.149666,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 053",
+    "addr:street": "Calle 146 Sur",
+    "addr:housenumber": "26-12",
+    "operator": "DEMO Operador 9"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000054,
+   "lat": 4.672971,
+   "lon": -74.155594,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 054",
+    "addr:street": "Calle 176 Sur",
+    "addr:housenumber": "65-77"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000055,
+   "lat": 4.718158,
+   "lon": -74.096053,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 055",
+    "addr:street": "Calle 6 Sur",
+    "addr:housenumber": "17-14",
+    "phone": "+57 601 684 9025",
+    "website": "https://demo-papeleria-55.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000056,
+   "lat": 4.609939,
+   "lon": -74.125638,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 056",
+    "addr:street": "Calle 40 Sur",
+    "addr:housenumber": "20-76",
+    "website": "https://demo-floristeria-56.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000057,
+   "lat": 4.761074,
+   "lon": -74.099945,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 057",
+    "addr:street": "Calle 33 Sur",
+    "addr:housenumber": "30-82"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000058,
+   "lat": 4.704485,
+   "lon": -74.047186,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 058",
+    "addr:street": "Calle 135 Sur",
+    "addr:housenumber": "75-34",
+    "phone": "+57 601 428 1018",
+    "website": "https://demo-ropa-58.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000059,
+   "lat": 4.649012,
+   "lon": -74.060609,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 059",
+    "addr:street": "Calle 64 Sur",
+    "addr:housenumber": "4-62",
+    "contact:instagram": "@democelulares59"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000060,
+   "lat": 4.606694,
+   "lon": -74.172994,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 060",
+    "addr:street": "Calle 59 Sur",
+    "addr:housenumber": "64-14",
+    "email": "contacto@demo-odontologia-60.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000061,
+   "lat": 4.602697,
+   "lon": -74.150172,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 061",
+    "addr:street": "Calle 52 Sur",
+    "addr:housenumber": "40-34",
+    "phone": "+57 300 000 4628"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000062,
+   "lat": 4.529402,
+   "lon": -74.143584,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 062",
+    "addr:street": "Calle 15 Sur",
+    "addr:housenumber": "77-28",
+    "website": "https://demo-peluqueria-62.example.com",
+    "contact:instagram": "@demopeluqueria62"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000063,
+   "lat": 4.567986,
+   "lon": -74.131519,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 063",
+    "addr:street": "Calle 81 Sur",
+    "addr:housenumber": "94-24",
+    "operator": "DEMO Operador 13"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000064,
+   "lat": 4.683565,
+   "lon": -74.130601,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 064",
+    "addr:street": "Calle 114 Sur",
+    "addr:housenumber": "22-23",
+    "contact:mobile": "+57 300 000 5584",
+    "website": "https://demo-estetica-64.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000065,
+   "lat": 4.710749,
+   "lon": -74.117652,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 065",
+    "addr:street": "Calle 111 Sur",
+    "addr:housenumber": "12-16",
+    "website": "https://demo-gimnasio-65.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000066,
+   "lat": 4.625266,
+   "lon": -74.120079,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 066",
+    "addr:street": "Calle 161 Sur",
+    "addr:housenumber": "99-61",
+    "contact:mobile": "+57 300 000 1571",
+    "contact:facebook": "demorestaurante66",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000067,
+   "lat": 4.744519,
+   "lon": -74.086601,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 067",
+    "addr:street": "Calle 158 Sur",
+    "addr:housenumber": "6-43"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000068,
+   "lat": 4.73786,
+   "lon": -74.047387,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 068",
+    "addr:street": "Calle 60 Sur",
+    "addr:housenumber": "14-70"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000069,
+   "lat": 4.649862,
+   "lon": -74.069652,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 069",
+    "addr:street": "Calle 78 Sur",
+    "addr:housenumber": "89-29",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000070,
+   "lat": 4.610115,
+   "lon": -74.200108,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 070",
+    "addr:street": "Calle 17 Sur",
+    "addr:housenumber": "84-14",
+    "email": "contacto@demo-inmobiliaria-70.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000071,
+   "lat": 4.608334,
+   "lon": -74.153158,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 071",
+    "addr:street": "Calle 115 Sur",
+    "addr:housenumber": "23-39",
+    "contact:mobile": "+57 300 000 8551"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000072,
+   "lat": 4.543635,
+   "lon": -74.168249,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 072",
+    "addr:street": "Calle 146 Sur",
+    "addr:housenumber": "35-57",
+    "phone": "+57 300 000 5265",
+    "website": "https://demo-abogados-72.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000073,
+   "lat": 4.563054,
+   "lon": -74.144157,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 073",
+    "addr:street": "Calle 63 Sur",
+    "addr:housenumber": "65-77",
+    "phone": "+57 300 000 2647"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000074,
+   "lat": 4.686575,
+   "lon": -74.168386,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 074",
+    "addr:street": "Calle 76 Sur",
+    "addr:housenumber": "30-25",
+    "contact:mobile": "+57 300 000 4181"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000075,
+   "lat": 4.717828,
+   "lon": -74.125769,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 075",
+    "addr:street": "Calle 153 Sur",
+    "addr:housenumber": "91-89",
+    "phone": "+57 601 238 7040",
+    "contact:instagram": "@demopapeleria75",
+    "email": "contacto@demo-papeleria-75.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000076,
+   "lat": 4.63259,
+   "lon": -74.097247,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 076",
+    "addr:street": "Calle 105 Sur",
+    "addr:housenumber": "87-57",
+    "phone": "+57 300 000 6115",
+    "website": "https://demo-floristeria-76.example.com",
+    "contact:instagram": "@demofloristeria76"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000077,
+   "lat": 4.756561,
+   "lon": -74.093818,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 077",
+    "addr:street": "Calle 137 Sur",
+    "addr:housenumber": "12-93",
+    "contact:mobile": "+57 300 000 5442"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000078,
+   "lat": 4.714287,
+   "lon": -74.033342,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 078",
+    "addr:street": "Calle 94 Sur",
+    "addr:housenumber": "83-35",
+    "phone": "+57 601 614 4336",
+    "email": "contacto@demo-ropa-78.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000079,
+   "lat": 4.644589,
+   "lon": -74.039078,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 079",
+    "addr:street": "Calle 34 Sur",
+    "addr:housenumber": "2-16",
+    "contact:facebook": "democelulares79"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000080,
+   "lat": 4.585835,
+   "lon": -74.198668,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 080",
+    "addr:street": "Calle 134 Sur",
+    "addr:housenumber": "22-18",
+    "contact:mobile": "+57 300 000 9036",
+    "operator": "DEMO Operador 16"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000081,
+   "lat": 4.612581,
+   "lon": -74.145694,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 081",
+    "addr:street": "Calle 163 Sur",
+    "addr:housenumber": "50-21",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000082,
+   "lat": 4.543854,
+   "lon": -74.146832,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 082",
+    "addr:street": "Calle 47 Sur",
+    "addr:housenumber": "73-37",
+    "contact:mobile": "+57 300 000 9485",
+    "website": "https://demo-peluqueria-82.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000083,
+   "lat": 4.585355,
+   "lon": -74.126301,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 083",
+    "addr:street": "Calle 173 Sur",
+    "addr:housenumber": "5-95",
+    "website": "https://demo-barberia-83.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000084,
+   "lat": 4.673305,
+   "lon": -74.15297,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 084",
+    "addr:street": "Calle 169 Sur",
+    "addr:housenumber": "48-67",
+    "website": "https://demo-estetica-84.example.com",
+    "contact:instagram": "@demoestetica84"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000085,
+   "lat": 4.712759,
+   "lon": -74.096538,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 085",
+    "addr:street": "Calle 122 Sur",
+    "addr:housenumber": "52-23",
+    "contact:mobile": "+57 300 000 6874",
+    "contact:instagram": "@demogimnasio85",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000086,
+   "lat": 4.60329,
+   "lon": -74.100661,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 086",
+    "addr:street": "Calle 131 Sur",
+    "addr:housenumber": "11-16",
+    "email": "contacto@demo-restaurante-86.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000087,
+   "lat": 4.757702,
+   "lon": -74.095616,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 087",
+    "addr:street": "Calle 34 Sur",
+    "addr:housenumber": "63-46",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000088,
+   "lat": 4.730247,
+   "lon": -74.043649,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 088",
+    "addr:street": "Calle 158 Sur",
+    "addr:housenumber": "36-68",
+    "contact:mobile": "+57 300 000 9228",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000089,
+   "lat": 4.637958,
+   "lon": -74.053861,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 089",
+    "addr:street": "Calle 163 Sur",
+    "addr:housenumber": "36-96",
+    "phone": "+57 601 585 3764",
+    "email": "contacto@demo-consultorio-89.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000090,
+   "lat": 4.598122,
+   "lon": -74.189142,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 090",
+    "addr:street": "Calle 177 Sur",
+    "addr:housenumber": "14-42"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000091,
+   "lat": 4.61441,
+   "lon": -74.139414,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 091",
+    "addr:street": "Calle 114 Sur",
+    "addr:housenumber": "30-32"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000092,
+   "lat": 4.547138,
+   "lon": -74.144171,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 092",
+    "addr:street": "Calle 1 Sur",
+    "addr:housenumber": "96-14",
+    "phone": "+57 300 000 5767",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000093,
+   "lat": 4.576124,
+   "lon": -74.159108,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 093",
+    "addr:street": "Calle 1 Sur",
+    "addr:housenumber": "73-55",
+    "phone": "+57 601 735 6851"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000094,
+   "lat": 4.656345,
+   "lon": -74.169436,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 094",
+    "addr:street": "Calle 63 Sur",
+    "addr:housenumber": "91-29",
+    "website": "https://demo-drogueria-94.example.com",
+    "contact:instagram": "@demodrogueria94"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000095,
+   "lat": 4.682245,
+   "lon": -74.097165,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 095",
+    "addr:street": "Calle 90 Sur",
+    "addr:housenumber": "77-92",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 1"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000096,
+   "lat": 4.61624,
+   "lon": -74.120493,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 096",
+    "addr:street": "Calle 15 Sur",
+    "addr:housenumber": "14-11"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000097,
+   "lat": 4.74661,
+   "lon": -74.075473,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 097",
+    "addr:street": "Calle 131 Sur",
+    "addr:housenumber": "40-18",
+    "phone": "+57 601 249 8830",
+    "contact:instagram": "@demominimercado97"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000098,
+   "lat": 4.718099,
+   "lon": -74.040962,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 098",
+    "addr:street": "Calle 27 Sur",
+    "addr:housenumber": "34-39",
+    "website": "https://demo-ropa-98.example.com",
+    "operator": "DEMO Operador 18"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000099,
+   "lat": 4.657169,
+   "lon": -74.042571,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 099",
+    "addr:street": "Calle 134 Sur",
+    "addr:housenumber": "34-47",
+    "email": "contacto@demo-celulares-99.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000100,
+   "lat": 4.609755,
+   "lon": -74.172212,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 100",
+    "addr:street": "Calle 84 Sur",
+    "addr:housenumber": "25-59",
+    "phone": "+57 601 444 7216"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000101,
+   "lat": 4.633588,
+   "lon": -74.142095,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 101",
+    "addr:street": "Calle 7 Sur",
+    "addr:housenumber": "56-39",
+    "email": "contacto@demo-veterinaria-101.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000102,
+   "lat": 4.511076,
+   "lon": -74.175733,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 102",
+    "addr:street": "Calle 42 Sur",
+    "addr:housenumber": "45-28",
+    "website": "https://demo-peluqueria-102.example.com",
+    "contact:instagram": "@demopeluqueria102",
+    "email": "contacto@demo-peluqueria-102.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 19"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000103,
+   "lat": 4.580471,
+   "lon": -74.152028,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 103",
+    "addr:street": "Calle 137 Sur",
+    "addr:housenumber": "86-18",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 3"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000104,
+   "lat": 4.683002,
+   "lon": -74.144739,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 104",
+    "addr:street": "Calle 74 Sur",
+    "addr:housenumber": "62-22",
+    "contact:mobile": "+57 300 000 4358",
+    "operator": "DEMO Operador 12"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000105,
+   "lat": 4.716413,
+   "lon": -74.09923,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 105",
+    "addr:street": "Calle 155 Sur",
+    "addr:housenumber": "65-70",
+    "contact:instagram": "@demogimnasio105"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000106,
+   "lat": 4.628186,
+   "lon": -74.108485,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 106",
+    "addr:street": "Calle 56 Sur",
+    "addr:housenumber": "92-21",
+    "operator": "DEMO Operador 12"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000107,
+   "lat": 4.749633,
+   "lon": -74.080341,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 107",
+    "addr:street": "Calle 48 Sur",
+    "addr:housenumber": "64-85",
+    "phone": "+57 601 727 5269",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000108,
+   "lat": 4.737548,
+   "lon": -74.019328,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 108",
+    "addr:street": "Calle 126 Sur",
+    "addr:housenumber": "90-81"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000109,
+   "lat": 4.665538,
+   "lon": -74.068993,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 109",
+    "addr:street": "Calle 53 Sur",
+    "addr:housenumber": "39-43",
+    "phone": "+57 601 758 9211",
+    "website": "https://demo-consultorio-109.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000110,
+   "lat": 4.607569,
+   "lon": -74.185786,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 110",
+    "addr:street": "Calle 9 Sur",
+    "addr:housenumber": "45-84",
+    "phone": "+57 601 359 8377"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000111,
+   "lat": 4.605042,
+   "lon": -74.151519,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 111",
+    "addr:street": "Calle 179 Sur",
+    "addr:housenumber": "31-74",
+    "phone": "+57 300 000 5939"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000112,
+   "lat": 4.534116,
+   "lon": -74.166055,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 112",
+    "addr:street": "Calle 61 Sur",
+    "addr:housenumber": "42-34",
+    "phone": "+57 300 000 2667",
+    "website": "https://demo-abogados-112.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000113,
+   "lat": 4.561896,
+   "lon": -74.149047,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 113",
+    "addr:street": "Calle 28 Sur",
+    "addr:housenumber": "82-23",
+    "phone": "+57 300 000 7362",
+    "contact:instagram": "@demoferreteria113",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000114,
+   "lat": 4.661849,
+   "lon": -74.169115,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 114",
+    "addr:street": "Calle 66 Sur",
+    "addr:housenumber": "78-61",
+    "contact:mobile": "+57 300 000 4969"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000115,
+   "lat": 4.708889,
+   "lon": -74.094797,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 115",
+    "addr:street": "Calle 165 Sur",
+    "addr:housenumber": "90-84"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000116,
+   "lat": 4.616783,
+   "lon": -74.098705,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 116",
+    "addr:street": "Calle 162 Sur",
+    "addr:housenumber": "21-42",
+    "contact:instagram": "@demofloristeria116"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000117,
+   "lat": 4.76578,
+   "lon": -74.086878,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 117",
+    "addr:street": "Calle 3 Sur",
+    "addr:housenumber": "50-72",
+    "website": "https://demo-minimercado-117.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000118,
+   "lat": 4.713928,
+   "lon": -74.016114,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 118",
+    "addr:street": "Calle 117 Sur",
+    "addr:housenumber": "70-36"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000119,
+   "lat": 4.638404,
+   "lon": -74.042626,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 119",
+    "addr:street": "Calle 101 Sur",
+    "addr:housenumber": "66-25",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 14"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000120,
+   "lat": 4.605143,
+   "lon": -74.183005,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 120",
+    "addr:street": "Calle 149 Sur",
+    "addr:housenumber": "34-23",
+    "phone": "+57 300 000 7561"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000121,
+   "lat": 4.605172,
+   "lon": -74.138936,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 121",
+    "addr:street": "Calle 163 Sur",
+    "addr:housenumber": "25-70"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000122,
+   "lat": 4.526531,
+   "lon": -74.140154,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 122",
+    "addr:street": "Calle 141 Sur",
+    "addr:housenumber": "84-26"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000123,
+   "lat": 4.577153,
+   "lon": -74.140737,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 123",
+    "addr:street": "Calle 72 Sur",
+    "addr:housenumber": "46-41",
+    "email": "contacto@demo-barberia-123.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000124,
+   "lat": 4.662127,
+   "lon": -74.154596,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 124",
+    "addr:street": "Calle 22 Sur",
+    "addr:housenumber": "73-51",
+    "website": "https://demo-estetica-124.example.com",
+    "email": "contacto@demo-estetica-124.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000125,
+   "lat": 4.706238,
+   "lon": -74.119999,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 125",
+    "addr:street": "Calle 26 Sur",
+    "addr:housenumber": "75-28",
+    "website": "https://demo-gimnasio-125.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000126,
+   "lat": 4.624381,
+   "lon": -74.102479,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 126",
+    "addr:street": "Calle 24 Sur",
+    "addr:housenumber": "86-80"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000127,
+   "lat": 4.765307,
+   "lon": -74.077797,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 127",
+    "addr:street": "Calle 68 Sur",
+    "addr:housenumber": "54-39"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000128,
+   "lat": 4.706585,
+   "lon": -74.026016,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 128",
+    "addr:street": "Calle 2 Sur",
+    "addr:housenumber": "21-51"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000129,
+   "lat": 4.633016,
+   "lon": -74.044518,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 129",
+    "addr:street": "Calle 163 Sur",
+    "addr:housenumber": "83-13",
+    "contact:mobile": "+57 300 000 1751"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000130,
+   "lat": 4.615902,
+   "lon": -74.208644,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 130",
+    "addr:street": "Calle 107 Sur",
+    "addr:housenumber": "81-26",
+    "phone": "+57 601 574 6592"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000131,
+   "lat": 4.622161,
+   "lon": -74.136931,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 131",
+    "addr:street": "Calle 75 Sur",
+    "addr:housenumber": "46-73",
+    "phone": "+57 601 715 5451",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000132,
+   "lat": 4.538527,
+   "lon": -74.174897,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 132",
+    "addr:street": "Calle 163 Sur",
+    "addr:housenumber": "12-15",
+    "phone": "+57 601 767 7652",
+    "contact:instagram": "@demoabogados132",
+    "email": "contacto@demo-abogados-132.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000133,
+   "lat": 4.574347,
+   "lon": -74.133679,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 133",
+    "addr:street": "Calle 129 Sur",
+    "addr:housenumber": "70-88",
+    "phone": "+57 601 350 2359",
+    "website": "https://demo-ferreteria-133.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000134,
+   "lat": 4.651479,
+   "lon": -74.139019,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 134",
+    "addr:street": "Calle 168 Sur",
+    "addr:housenumber": "2-57",
+    "website": "https://demo-drogueria-134.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 1"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000135,
+   "lat": 4.697227,
+   "lon": -74.104329,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 135",
+    "addr:street": "Calle 14 Sur",
+    "addr:housenumber": "64-82",
+    "operator": "DEMO Operador 13"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000136,
+   "lat": 4.623755,
+   "lon": -74.090275,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 136",
+    "addr:street": "Calle 169 Sur",
+    "addr:housenumber": "20-70",
+    "contact:instagram": "@demofloristeria136"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000137,
+   "lat": 4.730373,
+   "lon": -74.073225,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 137",
+    "addr:street": "Calle 23 Sur",
+    "addr:housenumber": "28-25",
+    "contact:mobile": "+57 300 000 1291"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000138,
+   "lat": 4.72989,
+   "lon": -74.022206,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 138",
+    "addr:street": "Calle 38 Sur",
+    "addr:housenumber": "94-20",
+    "phone": "+57 300 000 9160",
+    "operator": "DEMO Operador 1"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000139,
+   "lat": 4.665333,
+   "lon": -74.042534,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 139",
+    "addr:street": "Calle 159 Sur",
+    "addr:housenumber": "11-59",
+    "phone": "+57 601 369 8968"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000140,
+   "lat": 4.618654,
+   "lon": -74.205332,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 140",
+    "addr:street": "Calle 166 Sur",
+    "addr:housenumber": "21-90"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000141,
+   "lat": 4.611196,
+   "lon": -74.145126,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 141",
+    "addr:street": "Calle 167 Sur",
+    "addr:housenumber": "91-86",
+    "phone": "+57 601 215 3475"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000142,
+   "lat": 4.534071,
+   "lon": -74.144155,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 142",
+    "addr:street": "Calle 116 Sur",
+    "addr:housenumber": "37-98",
+    "contact:mobile": "+57 300 000 5309"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000143,
+   "lat": 4.555627,
+   "lon": -74.124376,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 143",
+    "addr:street": "Calle 147 Sur",
+    "addr:housenumber": "19-45"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000144,
+   "lat": 4.66939,
+   "lon": -74.15473,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 144",
+    "addr:street": "Calle 60 Sur",
+    "addr:housenumber": "40-87",
+    "contact:mobile": "+57 300 000 7479"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000145,
+   "lat": 4.683508,
+   "lon": -74.097737,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 145",
+    "addr:street": "Calle 17 Sur",
+    "addr:housenumber": "30-60"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000146,
+   "lat": 4.607693,
+   "lon": -74.122772,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 146",
+    "addr:street": "Calle 180 Sur",
+    "addr:housenumber": "38-56"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000147,
+   "lat": 4.764655,
+   "lon": -74.085133,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 147",
+    "addr:street": "Calle 119 Sur",
+    "addr:housenumber": "11-29",
+    "phone": "+57 601 231 6651",
+    "contact:facebook": "democafeteria147"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000148,
+   "lat": 4.723468,
+   "lon": -74.041457,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 148",
+    "addr:street": "Calle 72 Sur",
+    "addr:housenumber": "55-22",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000149,
+   "lat": 4.637229,
+   "lon": -74.066654,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 149",
+    "addr:street": "Calle 14 Sur",
+    "addr:housenumber": "5-81",
+    "phone": "+57 601 669 8976",
+    "contact:facebook": "democonsultorio149"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000150,
+   "lat": 4.618372,
+   "lon": -74.199712,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 150",
+    "addr:street": "Calle 145 Sur",
+    "addr:housenumber": "30-92",
+    "contact:mobile": "+57 300 000 9298"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000151,
+   "lat": 4.601545,
+   "lon": -74.159766,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 151",
+    "addr:street": "Calle 91 Sur",
+    "addr:housenumber": "8-80",
+    "contact:instagram": "@democontaduria151"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000152,
+   "lat": 4.512231,
+   "lon": -74.174208,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 152",
+    "addr:street": "Calle 2 Sur",
+    "addr:housenumber": "26-96"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000153,
+   "lat": 4.564999,
+   "lon": -74.144814,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 153",
+    "addr:street": "Calle 113 Sur",
+    "addr:housenumber": "31-28",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000154,
+   "lat": 4.653111,
+   "lon": -74.145254,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 154",
+    "addr:street": "Calle 96 Sur",
+    "addr:housenumber": "96-27",
+    "email": "contacto@demo-drogueria-154.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000155,
+   "lat": 4.692903,
+   "lon": -74.120645,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 155",
+    "addr:street": "Calle 30 Sur",
+    "addr:housenumber": "81-56",
+    "contact:mobile": "+57 300 000 4631"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000156,
+   "lat": 4.616731,
+   "lon": -74.12013,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 156",
+    "addr:street": "Calle 7 Sur",
+    "addr:housenumber": "35-83"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000157,
+   "lat": 4.769145,
+   "lon": -74.097726,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 157",
+    "addr:street": "Calle 172 Sur",
+    "addr:housenumber": "28-81"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000158,
+   "lat": 4.737003,
+   "lon": -74.046097,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 158",
+    "addr:street": "Calle 75 Sur",
+    "addr:housenumber": "54-30",
+    "contact:mobile": "+57 300 000 5809",
+    "website": "https://demo-ropa-158.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000159,
+   "lat": 4.661583,
+   "lon": -74.032254,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 159",
+    "addr:street": "Calle 74 Sur",
+    "addr:housenumber": "24-56",
+    "phone": "+57 601 618 4576",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000160,
+   "lat": 4.604026,
+   "lon": -74.176841,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 160",
+    "addr:street": "Calle 156 Sur",
+    "addr:housenumber": "94-73",
+    "website": "https://demo-odontologia-160.example.com",
+    "contact:instagram": "@demoodontologia160",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000161,
+   "lat": 4.600401,
+   "lon": -74.14231,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 161",
+    "addr:street": "Calle 134 Sur",
+    "addr:housenumber": "53-17",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000162,
+   "lat": 4.540519,
+   "lon": -74.174669,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 162",
+    "addr:street": "Calle 171 Sur",
+    "addr:housenumber": "35-41",
+    "phone": "+57 300 000 7014",
+    "website": "https://demo-peluqueria-162.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000163,
+   "lat": 4.588749,
+   "lon": -74.157146,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 163",
+    "addr:street": "Calle 92 Sur",
+    "addr:housenumber": "92-41",
+    "operator": "DEMO Operador 4"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000164,
+   "lat": 4.688162,
+   "lon": -74.150208,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 164",
+    "addr:street": "Calle 132 Sur",
+    "addr:housenumber": "4-77",
+    "website": "https://demo-estetica-164.example.com",
+    "contact:facebook": "demoestetica164",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000165,
+   "lat": 4.702214,
+   "lon": -74.091786,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 165",
+    "addr:street": "Calle 5 Sur",
+    "addr:housenumber": "13-99",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000166,
+   "lat": 4.614028,
+   "lon": -74.126244,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 166",
+    "addr:street": "Calle 46 Sur",
+    "addr:housenumber": "6-44",
+    "contact:mobile": "+57 300 000 9087"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000167,
+   "lat": 4.739097,
+   "lon": -74.090919,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 167",
+    "addr:street": "Calle 172 Sur",
+    "addr:housenumber": "74-69",
+    "website": "https://demo-cafeteria-167.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000168,
+   "lat": 4.721025,
+   "lon": -74.034175,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 168",
+    "addr:street": "Calle 14 Sur",
+    "addr:housenumber": "47-53",
+    "phone": "+57 601 543 8136"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000169,
+   "lat": 4.642995,
+   "lon": -74.064135,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 169",
+    "addr:street": "Calle 175 Sur",
+    "addr:housenumber": "46-41",
+    "contact:instagram": "@democonsultorio169"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000170,
+   "lat": 4.606766,
+   "lon": -74.200981,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 170",
+    "addr:street": "Calle 108 Sur",
+    "addr:housenumber": "51-68",
+    "email": "contacto@demo-inmobiliaria-170.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000171,
+   "lat": 4.627138,
+   "lon": -74.159063,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 171",
+    "addr:street": "Calle 139 Sur",
+    "addr:housenumber": "5-89",
+    "contact:mobile": "+57 300 000 2993"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000172,
+   "lat": 4.514815,
+   "lon": -74.156228,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 172",
+    "addr:street": "Calle 132 Sur",
+    "addr:housenumber": "35-20",
+    "contact:instagram": "@demoabogados172"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000173,
+   "lat": 4.561532,
+   "lon": -74.150264,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 173",
+    "addr:street": "Calle 23 Sur",
+    "addr:housenumber": "95-79",
+    "phone": "+57 300 000 8440"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000174,
+   "lat": 4.671921,
+   "lon": -74.145488,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 174",
+    "addr:street": "Calle 121 Sur",
+    "addr:housenumber": "40-13",
+    "phone": "+57 300 000 4630",
+    "website": "https://demo-drogueria-174.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000175,
+   "lat": 4.718083,
+   "lon": -74.117042,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 175",
+    "addr:street": "Calle 84 Sur",
+    "addr:housenumber": "63-44",
+    "phone": "+57 300 000 4541",
+    "email": "contacto@demo-papeleria-175.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000176,
+   "lat": 4.602481,
+   "lon": -74.114485,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 176",
+    "addr:street": "Calle 113 Sur",
+    "addr:housenumber": "46-23"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000177,
+   "lat": 4.7381,
+   "lon": -74.07557,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 177",
+    "addr:street": "Calle 71 Sur",
+    "addr:housenumber": "67-22"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000178,
+   "lat": 4.705091,
+   "lon": -74.015167,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 178",
+    "addr:street": "Calle 2 Sur",
+    "addr:housenumber": "53-80"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000179,
+   "lat": 4.654293,
+   "lon": -74.054818,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 179",
+    "addr:street": "Calle 116 Sur",
+    "addr:housenumber": "89-68",
+    "phone": "+57 300 000 6777"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000180,
+   "lat": 4.613983,
+   "lon": -74.190018,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 180",
+    "addr:street": "Calle 114 Sur",
+    "addr:housenumber": "39-33"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000181,
+   "lat": 4.638758,
+   "lon": -74.145677,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 181",
+    "addr:street": "Calle 63 Sur",
+    "addr:housenumber": "42-36",
+    "contact:facebook": "demoveterinaria181"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000182,
+   "lat": 4.531458,
+   "lon": -74.167503,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 182",
+    "addr:street": "Calle 159 Sur",
+    "addr:housenumber": "56-76",
+    "email": "contacto@demo-peluqueria-182.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000183,
+   "lat": 4.550415,
+   "lon": -74.157269,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 183",
+    "addr:street": "Calle 59 Sur",
+    "addr:housenumber": "13-62",
+    "phone": "+57 601 610 3526"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000184,
+   "lat": 4.663731,
+   "lon": -74.148794,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 184",
+    "addr:street": "Calle 24 Sur",
+    "addr:housenumber": "22-56",
+    "phone": "+57 601 276 6089",
+    "contact:instagram": "@demoestetica184"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000185,
+   "lat": 4.715526,
+   "lon": -74.113165,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 185",
+    "addr:street": "Calle 41 Sur",
+    "addr:housenumber": "68-47",
+    "website": "https://demo-gimnasio-185.example.com",
+    "email": "contacto@demo-gimnasio-185.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000186,
+   "lat": 4.622795,
+   "lon": -74.104747,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 186",
+    "addr:street": "Calle 11 Sur",
+    "addr:housenumber": "89-62",
+    "contact:mobile": "+57 300 000 1045",
+    "contact:facebook": "demorestaurante186"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000187,
+   "lat": 4.756724,
+   "lon": -74.092134,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 187",
+    "addr:street": "Calle 128 Sur",
+    "addr:housenumber": "99-80",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000188,
+   "lat": 4.705814,
+   "lon": -74.029263,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 188",
+    "addr:street": "Calle 131 Sur",
+    "addr:housenumber": "14-13",
+    "contact:mobile": "+57 300 000 3794"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000189,
+   "lat": 4.657383,
+   "lon": -74.046846,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 189",
+    "addr:street": "Calle 37 Sur",
+    "addr:housenumber": "92-40",
+    "phone": "+57 601 373 1538",
+    "contact:instagram": "@democonsultorio189"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000190,
+   "lat": 4.595426,
+   "lon": -74.207813,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 190",
+    "addr:street": "Calle 102 Sur",
+    "addr:housenumber": "75-15",
+    "phone": "+57 601 444 5085",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000191,
+   "lat": 4.618218,
+   "lon": -74.153265,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 191",
+    "addr:street": "Calle 65 Sur",
+    "addr:housenumber": "64-18",
+    "phone": "+57 300 000 7386",
+    "operator": "DEMO Operador 8"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000192,
+   "lat": 4.513499,
+   "lon": -74.173203,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 192",
+    "addr:street": "Calle 98 Sur",
+    "addr:housenumber": "24-10"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000193,
+   "lat": 4.552618,
+   "lon": -74.155068,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 193",
+    "addr:street": "Calle 90 Sur",
+    "addr:housenumber": "71-41",
+    "phone": "+57 601 678 5646",
+    "email": "contacto@demo-ferreteria-193.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000194,
+   "lat": 4.655195,
+   "lon": -74.162148,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 194",
+    "addr:street": "Calle 140 Sur",
+    "addr:housenumber": "17-81",
+    "phone": "+57 601 445 3608"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000195,
+   "lat": 4.699038,
+   "lon": -74.121822,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 195",
+    "addr:street": "Calle 116 Sur",
+    "addr:housenumber": "87-26"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000196,
+   "lat": 4.620408,
+   "lon": -74.124979,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 196",
+    "addr:street": "Calle 32 Sur",
+    "addr:housenumber": "87-75",
+    "contact:mobile": "+57 300 000 5430",
+    "contact:facebook": "demofloristeria196",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 3"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000197,
+   "lat": 4.757787,
+   "lon": -74.068954,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 197",
+    "addr:street": "Calle 60 Sur",
+    "addr:housenumber": "42-34",
+    "website": "https://demo-minimercado-197.example.com",
+    "operator": "DEMO Operador 10"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000198,
+   "lat": 4.703518,
+   "lon": -74.038457,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 198",
+    "addr:street": "Calle 103 Sur",
+    "addr:housenumber": "37-55",
+    "phone": "+57 601 675 3165"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000199,
+   "lat": 4.631011,
+   "lon": -74.041849,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 199",
+    "addr:street": "Calle 119 Sur",
+    "addr:housenumber": "32-61",
+    "phone": "+57 601 300 3976"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000200,
+   "lat": 4.604341,
+   "lon": -74.192772,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 200",
+    "addr:street": "Calle 78 Sur",
+    "addr:housenumber": "20-58",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000201,
+   "lat": 4.620831,
+   "lon": -74.132972,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 201",
+    "addr:street": "Calle 172 Sur",
+    "addr:housenumber": "88-83",
+    "phone": "+57 601 200 2832",
+    "email": "contacto@demo-veterinaria-201.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000202,
+   "lat": 4.511894,
+   "lon": -74.170222,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 202",
+    "addr:street": "Calle 29 Sur",
+    "addr:housenumber": "5-50",
+    "phone": "+57 300 000 6663",
+    "contact:instagram": "@demopeluqueria202"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000203,
+   "lat": 4.561247,
+   "lon": -74.156403,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 203",
+    "addr:street": "Calle 109 Sur",
+    "addr:housenumber": "57-53",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000204,
+   "lat": 4.667134,
+   "lon": -74.149525,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 204",
+    "addr:street": "Calle 33 Sur",
+    "addr:housenumber": "63-34",
+    "contact:mobile": "+57 300 000 5279",
+    "website": "https://demo-estetica-204.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000205,
+   "lat": 4.686722,
+   "lon": -74.116111,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 205",
+    "addr:street": "Calle 24 Sur",
+    "addr:housenumber": "26-91",
+    "phone": "+57 601 339 8969"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000206,
+   "lat": 4.614058,
+   "lon": -74.118025,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 206",
+    "addr:street": "Calle 37 Sur",
+    "addr:housenumber": "76-82",
+    "phone": "+57 300 000 2932"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000207,
+   "lat": 4.760646,
+   "lon": -74.066753,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 207",
+    "addr:street": "Calle 30 Sur",
+    "addr:housenumber": "89-47",
+    "contact:mobile": "+57 300 000 8972",
+    "website": "https://demo-cafeteria-207.example.com",
+    "contact:instagram": "@democafeteria207"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000208,
+   "lat": 4.70452,
+   "lon": -74.037021,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 208",
+    "addr:street": "Calle 120 Sur",
+    "addr:housenumber": "73-56",
+    "phone": "+57 300 000 2176",
+    "website": "https://demo-panaderia-208.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000209,
+   "lat": 4.65956,
+   "lon": -74.059423,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 209",
+    "addr:street": "Calle 166 Sur",
+    "addr:housenumber": "63-65",
+    "email": "contacto@demo-consultorio-209.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000210,
+   "lat": 4.609226,
+   "lon": -74.182025,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 210",
+    "addr:street": "Calle 168 Sur",
+    "addr:housenumber": "32-20",
+    "contact:mobile": "+57 300 000 1453",
+    "website": "https://demo-inmobiliaria-210.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000211,
+   "lat": 4.635824,
+   "lon": -74.142717,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 211",
+    "addr:street": "Calle 27 Sur",
+    "addr:housenumber": "93-49"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000212,
+   "lat": 4.524771,
+   "lon": -74.146744,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 212",
+    "addr:street": "Calle 62 Sur",
+    "addr:housenumber": "8-15",
+    "contact:mobile": "+57 300 000 7606",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000213,
+   "lat": 4.573245,
+   "lon": -74.156791,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 213",
+    "addr:street": "Calle 177 Sur",
+    "addr:housenumber": "30-30",
+    "contact:mobile": "+57 300 000 7576",
+    "website": "https://demo-ferreteria-213.example.com",
+    "contact:instagram": "@demoferreteria213",
+    "operator": "DEMO Operador 20"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000214,
+   "lat": 4.684213,
+   "lon": -74.138523,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 214",
+    "addr:street": "Calle 109 Sur",
+    "addr:housenumber": "19-46",
+    "contact:mobile": "+57 300 000 1906"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000215,
+   "lat": 4.71616,
+   "lon": -74.123421,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 215",
+    "addr:street": "Calle 76 Sur",
+    "addr:housenumber": "1-66"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000216,
+   "lat": 4.621388,
+   "lon": -74.104971,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 216",
+    "addr:street": "Calle 40 Sur",
+    "addr:housenumber": "52-87",
+    "contact:instagram": "@demofloristeria216"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000217,
+   "lat": 4.768112,
+   "lon": -74.080771,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 217",
+    "addr:street": "Calle 166 Sur",
+    "addr:housenumber": "18-48"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000218,
+   "lat": 4.705877,
+   "lon": -74.026837,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 218",
+    "addr:street": "Calle 143 Sur",
+    "addr:housenumber": "75-63",
+    "phone": "+57 601 446 8231",
+    "contact:instagram": "@demoropa218"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000219,
+   "lat": 4.664487,
+   "lon": -74.05986,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 219",
+    "addr:street": "Calle 25 Sur",
+    "addr:housenumber": "25-77"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000220,
+   "lat": 4.61637,
+   "lon": -74.187326,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 220",
+    "addr:street": "Calle 105 Sur",
+    "addr:housenumber": "87-19",
+    "website": "https://demo-odontologia-220.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000221,
+   "lat": 4.638415,
+   "lon": -74.149394,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 221",
+    "addr:street": "Calle 118 Sur",
+    "addr:housenumber": "88-60",
+    "email": "contacto@demo-veterinaria-221.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000222,
+   "lat": 4.526174,
+   "lon": -74.178111,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 222",
+    "addr:street": "Calle 11 Sur",
+    "addr:housenumber": "2-99",
+    "website": "https://demo-peluqueria-222.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000223,
+   "lat": 4.584885,
+   "lon": -74.137482,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 223",
+    "addr:street": "Calle 91 Sur",
+    "addr:housenumber": "22-56",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000224,
+   "lat": 4.67949,
+   "lon": -74.132079,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 224",
+    "addr:street": "Calle 126 Sur",
+    "addr:housenumber": "6-87",
+    "phone": "+57 601 564 9992",
+    "contact:facebook": "demoestetica224",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000225,
+   "lat": 4.707757,
+   "lon": -74.129149,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 225",
+    "addr:street": "Calle 149 Sur",
+    "addr:housenumber": "57-24",
+    "contact:instagram": "@demogimnasio225"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000226,
+   "lat": 4.626783,
+   "lon": -74.096552,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 226",
+    "addr:street": "Calle 151 Sur",
+    "addr:housenumber": "33-78",
+    "email": "contacto@demo-restaurante-226.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000227,
+   "lat": 4.749359,
+   "lon": -74.098734,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 227",
+    "addr:street": "Calle 10 Sur",
+    "addr:housenumber": "10-33"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000228,
+   "lat": 4.709168,
+   "lon": -74.011683,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 228",
+    "addr:street": "Calle 133 Sur",
+    "addr:housenumber": "10-56",
+    "phone": "+57 601 421 6099",
+    "contact:facebook": "demopanaderia228"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000229,
+   "lat": 4.653082,
+   "lon": -74.054485,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 229",
+    "addr:street": "Calle 91 Sur",
+    "addr:housenumber": "41-10",
+    "phone": "+57 601 695 6468"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000230,
+   "lat": 4.585746,
+   "lon": -74.194623,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 230",
+    "addr:street": "Calle 17 Sur",
+    "addr:housenumber": "65-43",
+    "phone": "+57 601 787 9653",
+    "contact:instagram": "@demoinmobiliaria230"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000231,
+   "lat": 4.60797,
+   "lon": -74.15295,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 231",
+    "addr:street": "Calle 147 Sur",
+    "addr:housenumber": "82-22",
+    "phone": "+57 601 488 4900"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000232,
+   "lat": 4.530356,
+   "lon": -74.154592,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 232",
+    "addr:street": "Calle 90 Sur",
+    "addr:housenumber": "71-61",
+    "phone": "+57 601 545 6295"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000233,
+   "lat": 4.556032,
+   "lon": -74.151786,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 233",
+    "addr:street": "Calle 172 Sur",
+    "addr:housenumber": "59-61",
+    "phone": "+57 601 782 5954"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000234,
+   "lat": 4.676354,
+   "lon": -74.131367,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 234",
+    "addr:street": "Calle 19 Sur",
+    "addr:housenumber": "25-84"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000235,
+   "lat": 4.708848,
+   "lon": -74.093122,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 235",
+    "addr:street": "Calle 125 Sur",
+    "addr:housenumber": "41-32",
+    "phone": "+57 300 000 5219",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 15"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000236,
+   "lat": 4.608014,
+   "lon": -74.105884,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 236",
+    "addr:street": "Calle 129 Sur",
+    "addr:housenumber": "83-22",
+    "phone": "+57 300 000 1930",
+    "contact:facebook": "demofloristeria236"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000237,
+   "lat": 4.735467,
+   "lon": -74.092473,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 237",
+    "addr:street": "Calle 138 Sur",
+    "addr:housenumber": "83-11"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000238,
+   "lat": 4.727159,
+   "lon": -74.036489,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 238",
+    "addr:street": "Calle 15 Sur",
+    "addr:housenumber": "54-15",
+    "contact:mobile": "+57 300 000 6480",
+    "operator": "DEMO Operador 11"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000239,
+   "lat": 4.652566,
+   "lon": -74.030499,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 239",
+    "addr:street": "Calle 15 Sur",
+    "addr:housenumber": "54-88",
+    "contact:facebook": "democelulares239"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000240,
+   "lat": 4.594314,
+   "lon": -74.195531,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 240",
+    "addr:street": "Calle 89 Sur",
+    "addr:housenumber": "69-97"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000241,
+   "lat": 4.628457,
+   "lon": -74.139468,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 241",
+    "addr:street": "Calle 166 Sur",
+    "addr:housenumber": "40-93"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000242,
+   "lat": 4.510362,
+   "lon": -74.160969,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 242",
+    "addr:street": "Calle 168 Sur",
+    "addr:housenumber": "47-29",
+    "contact:facebook": "demopeluqueria242",
+    "email": "contacto@demo-peluqueria-242.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 17"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000243,
+   "lat": 4.558198,
+   "lon": -74.128905,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 243",
+    "addr:street": "Calle 67 Sur",
+    "addr:housenumber": "78-56"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000244,
+   "lat": 4.678385,
+   "lon": -74.152338,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 244",
+    "addr:street": "Calle 128 Sur",
+    "addr:housenumber": "28-91",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000245,
+   "lat": 4.680617,
+   "lon": -74.09773,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 245",
+    "addr:street": "Calle 103 Sur",
+    "addr:housenumber": "87-54",
+    "contact:mobile": "+57 300 000 7160",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000246,
+   "lat": 4.610493,
+   "lon": -74.112648,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 246",
+    "addr:street": "Calle 60 Sur",
+    "addr:housenumber": "46-36",
+    "phone": "+57 601 635 5565",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000247,
+   "lat": 4.764771,
+   "lon": -74.089309,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 247",
+    "addr:street": "Calle 35 Sur",
+    "addr:housenumber": "39-46",
+    "contact:mobile": "+57 300 000 1064"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000248,
+   "lat": 4.723169,
+   "lon": -74.014686,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 248",
+    "addr:street": "Calle 54 Sur",
+    "addr:housenumber": "95-56",
+    "contact:mobile": "+57 300 000 8193",
+    "website": "https://demo-panaderia-248.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000249,
+   "lat": 4.668973,
+   "lon": -74.069623,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 249",
+    "addr:street": "Calle 78 Sur",
+    "addr:housenumber": "20-74",
+    "website": "https://demo-consultorio-249.example.com",
+    "email": "contacto@demo-consultorio-249.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000250,
+   "lat": 4.608654,
+   "lon": -74.174722,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 250",
+    "addr:street": "Calle 9 Sur",
+    "addr:housenumber": "75-40",
+    "phone": "+57 300 000 1251",
+    "website": "https://demo-inmobiliaria-250.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 11"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000251,
+   "lat": 4.602582,
+   "lon": -74.165586,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 251",
+    "addr:street": "Calle 125 Sur",
+    "addr:housenumber": "18-77",
+    "phone": "+57 601 383 4668",
+    "contact:instagram": "@democontaduria251",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000252,
+   "lat": 4.529851,
+   "lon": -74.143252,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 252",
+    "addr:street": "Calle 90 Sur",
+    "addr:housenumber": "28-38",
+    "email": "contacto@demo-abogados-252.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000253,
+   "lat": 4.566325,
+   "lon": -74.137735,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 253",
+    "addr:street": "Calle 93 Sur",
+    "addr:housenumber": "35-11",
+    "phone": "+57 601 242 8434"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000254,
+   "lat": 4.665971,
+   "lon": -74.157269,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 254",
+    "addr:street": "Calle 108 Sur",
+    "addr:housenumber": "50-29",
+    "phone": "+57 601 594 7716"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000255,
+   "lat": 4.707747,
+   "lon": -74.1008,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 255",
+    "addr:street": "Calle 62 Sur",
+    "addr:housenumber": "26-94",
+    "contact:mobile": "+57 300 000 1551",
+    "contact:instagram": "@demopapeleria255"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000256,
+   "lat": 4.612625,
+   "lon": -74.091135,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 256",
+    "addr:street": "Calle 1 Sur",
+    "addr:housenumber": "61-92"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000257,
+   "lat": 4.745153,
+   "lon": -74.071513,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 257",
+    "addr:street": "Calle 101 Sur",
+    "addr:housenumber": "68-44",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000258,
+   "lat": 4.710597,
+   "lon": -74.01365,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 258",
+    "addr:street": "Calle 122 Sur",
+    "addr:housenumber": "93-54"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000259,
+   "lat": 4.651099,
+   "lon": -74.037466,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 259",
+    "addr:street": "Calle 62 Sur",
+    "addr:housenumber": "87-32",
+    "contact:mobile": "+57 300 000 8541",
+    "website": "https://demo-celulares-259.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000260,
+   "lat": 4.594471,
+   "lon": -74.175455,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 260",
+    "addr:street": "Calle 110 Sur",
+    "addr:housenumber": "16-62",
+    "contact:mobile": "+57 300 000 5120"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000261,
+   "lat": 4.611001,
+   "lon": -74.15838,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 261",
+    "addr:street": "Calle 115 Sur",
+    "addr:housenumber": "89-24",
+    "phone": "+57 601 689 3859",
+    "contact:instagram": "@demoveterinaria261"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000262,
+   "lat": 4.524831,
+   "lon": -74.166396,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 262",
+    "addr:street": "Calle 98 Sur",
+    "addr:housenumber": "33-12",
+    "website": "https://demo-peluqueria-262.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000263,
+   "lat": 4.560225,
+   "lon": -74.149384,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 263",
+    "addr:street": "Calle 113 Sur",
+    "addr:housenumber": "12-77"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000264,
+   "lat": 4.651756,
+   "lon": -74.152299,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 264",
+    "addr:street": "Calle 94 Sur",
+    "addr:housenumber": "6-47"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000265,
+   "lat": 4.704742,
+   "lon": -74.090892,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 265",
+    "addr:street": "Calle 149 Sur",
+    "addr:housenumber": "48-18",
+    "contact:instagram": "@demogimnasio265"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000266,
+   "lat": 4.636053,
+   "lon": -74.099719,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 266",
+    "addr:street": "Calle 7 Sur",
+    "addr:housenumber": "14-85",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 13"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000267,
+   "lat": 4.749651,
+   "lon": -74.079528,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 267",
+    "addr:street": "Calle 3 Sur",
+    "addr:housenumber": "86-39",
+    "contact:instagram": "@democafeteria267"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000268,
+   "lat": 4.704725,
+   "lon": -74.041172,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 268",
+    "addr:street": "Calle 20 Sur",
+    "addr:housenumber": "74-11",
+    "contact:mobile": "+57 300 000 2445",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000269,
+   "lat": 4.66452,
+   "lon": -74.047985,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 269",
+    "addr:street": "Calle 107 Sur",
+    "addr:housenumber": "75-27",
+    "operator": "DEMO Operador 18"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000270,
+   "lat": 4.590987,
+   "lon": -74.199506,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 270",
+    "addr:street": "Calle 81 Sur",
+    "addr:housenumber": "50-42"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000271,
+   "lat": 4.615209,
+   "lon": -74.152556,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 271",
+    "addr:street": "Calle 139 Sur",
+    "addr:housenumber": "33-49",
+    "phone": "+57 300 000 1853",
+    "website": "https://demo-contaduria-271.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000272,
+   "lat": 4.547218,
+   "lon": -74.16633,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 272",
+    "addr:street": "Calle 117 Sur",
+    "addr:housenumber": "91-81",
+    "contact:instagram": "@demoabogados272",
+    "contact:facebook": "demoabogados272",
+    "operator": "DEMO Operador 8"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000273,
+   "lat": 4.581844,
+   "lon": -74.148339,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 273",
+    "addr:street": "Calle 54 Sur",
+    "addr:housenumber": "76-88",
+    "email": "contacto@demo-ferreteria-273.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000274,
+   "lat": 4.651959,
+   "lon": -74.135495,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 274",
+    "addr:street": "Calle 19 Sur",
+    "addr:housenumber": "77-73",
+    "phone": "+57 300 000 3689",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000275,
+   "lat": 4.685831,
+   "lon": -74.093286,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 275",
+    "addr:street": "Calle 53 Sur",
+    "addr:housenumber": "67-22",
+    "website": "https://demo-papeleria-275.example.com",
+    "contact:instagram": "@demopapeleria275",
+    "contact:facebook": "demopapeleria275"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000276,
+   "lat": 4.617696,
+   "lon": -74.113017,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 276",
+    "addr:street": "Calle 15 Sur",
+    "addr:housenumber": "90-27",
+    "contact:mobile": "+57 300 000 8312"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000277,
+   "lat": 4.766476,
+   "lon": -74.087024,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 277",
+    "addr:street": "Calle 55 Sur",
+    "addr:housenumber": "20-95",
+    "contact:instagram": "@demominimercado277",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000278,
+   "lat": 4.703744,
+   "lon": -74.031422,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 278",
+    "addr:street": "Calle 48 Sur",
+    "addr:housenumber": "56-52",
+    "website": "https://demo-ropa-278.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000279,
+   "lat": 4.651053,
+   "lon": -74.05837,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 279",
+    "addr:street": "Calle 90 Sur",
+    "addr:housenumber": "3-73"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000280,
+   "lat": 4.588053,
+   "lon": -74.191182,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 280",
+    "addr:street": "Calle 59 Sur",
+    "addr:housenumber": "75-48",
+    "contact:mobile": "+57 300 000 2649",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000281,
+   "lat": 4.617985,
+   "lon": -74.160104,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 281",
+    "addr:street": "Calle 94 Sur",
+    "addr:housenumber": "23-24",
+    "contact:instagram": "@demoveterinaria281",
+    "email": "contacto@demo-veterinaria-281.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000282,
+   "lat": 4.533824,
+   "lon": -74.161544,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 282",
+    "addr:street": "Calle 9 Sur",
+    "addr:housenumber": "6-75",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000283,
+   "lat": 4.57937,
+   "lon": -74.145623,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 283",
+    "addr:street": "Calle 170 Sur",
+    "addr:housenumber": "12-52",
+    "contact:mobile": "+57 300 000 8868",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000284,
+   "lat": 4.671642,
+   "lon": -74.157029,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 284",
+    "addr:street": "Calle 63 Sur",
+    "addr:housenumber": "21-82",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000285,
+   "lat": 4.689595,
+   "lon": -74.095139,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 285",
+    "addr:street": "Calle 129 Sur",
+    "addr:housenumber": "31-22",
+    "contact:mobile": "+57 300 000 1879",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000286,
+   "lat": 4.606146,
+   "lon": -74.119433,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 286",
+    "addr:street": "Calle 8 Sur",
+    "addr:housenumber": "55-60",
+    "website": "https://demo-restaurante-286.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000287,
+   "lat": 4.760998,
+   "lon": -74.079482,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 287",
+    "addr:street": "Calle 16 Sur",
+    "addr:housenumber": "32-19",
+    "contact:instagram": "@democafeteria287"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000288,
+   "lat": 4.732422,
+   "lon": -74.031528,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 288",
+    "addr:street": "Calle 47 Sur",
+    "addr:housenumber": "2-50",
+    "contact:facebook": "demopanaderia288"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000289,
+   "lat": 4.636049,
+   "lon": -74.056227,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 289",
+    "addr:street": "Calle 36 Sur",
+    "addr:housenumber": "27-35",
+    "contact:facebook": "democonsultorio289",
+    "email": "contacto@demo-consultorio-289.example.com",
+    "operator": "DEMO Operador 17"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000290,
+   "lat": 4.61117,
+   "lon": -74.173676,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 290",
+    "addr:street": "Calle 155 Sur",
+    "addr:housenumber": "82-18",
+    "phone": "+57 300 000 1824",
+    "contact:facebook": "demoinmobiliaria290"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000291,
+   "lat": 4.63863,
+   "lon": -74.143091,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 291",
+    "addr:street": "Calle 128 Sur",
+    "addr:housenumber": "18-43"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000292,
+   "lat": 4.527413,
+   "lon": -74.146993,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 292",
+    "addr:street": "Calle 132 Sur",
+    "addr:housenumber": "39-85",
+    "contact:instagram": "@demoabogados292"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000293,
+   "lat": 4.559283,
+   "lon": -74.152079,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 293",
+    "addr:street": "Calle 118 Sur",
+    "addr:housenumber": "72-40",
+    "email": "contacto@demo-ferreteria-293.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000294,
+   "lat": 4.67507,
+   "lon": -74.139044,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 294",
+    "addr:street": "Calle 88 Sur",
+    "addr:housenumber": "49-61"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000295,
+   "lat": 4.692191,
+   "lon": -74.117981,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 295",
+    "addr:street": "Calle 155 Sur",
+    "addr:housenumber": "3-24"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000296,
+   "lat": 4.615755,
+   "lon": -74.111362,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 296",
+    "addr:street": "Calle 9 Sur",
+    "addr:housenumber": "38-52",
+    "contact:mobile": "+57 300 000 5440",
+    "website": "https://demo-floristeria-296.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000297,
+   "lat": 4.755086,
+   "lon": -74.084974,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 297",
+    "addr:street": "Calle 48 Sur",
+    "addr:housenumber": "50-44",
+    "phone": "+57 601 354 6937",
+    "website": "https://demo-minimercado-297.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000298,
+   "lat": 4.71274,
+   "lon": -74.014952,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 298",
+    "addr:street": "Calle 156 Sur",
+    "addr:housenumber": "25-30",
+    "phone": "+57 601 209 1005",
+    "contact:instagram": "@demoropa298"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000299,
+   "lat": 4.65705,
+   "lon": -74.030619,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 299",
+    "addr:street": "Calle 132 Sur",
+    "addr:housenumber": "86-58",
+    "contact:mobile": "+57 300 000 5150",
+    "contact:instagram": "@democelulares299"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000300,
+   "lat": 4.606447,
+   "lon": -74.184723,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 300",
+    "addr:street": "Calle 97 Sur",
+    "addr:housenumber": "67-96",
+    "contact:mobile": "+57 300 000 9161",
+    "contact:facebook": "demoodontologia300"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000301,
+   "lat": 4.615087,
+   "lon": -74.157554,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 301",
+    "addr:street": "Calle 132 Sur",
+    "addr:housenumber": "20-87",
+    "website": "https://demo-veterinaria-301.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000302,
+   "lat": 4.533502,
+   "lon": -74.156929,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 302",
+    "addr:street": "Calle 12 Sur",
+    "addr:housenumber": "51-32"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000303,
+   "lat": 4.589126,
+   "lon": -74.134048,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 303",
+    "addr:street": "Calle 174 Sur",
+    "addr:housenumber": "82-58"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000304,
+   "lat": 4.651933,
+   "lon": -74.148704,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 304",
+    "addr:street": "Calle 36 Sur",
+    "addr:housenumber": "26-76",
+    "website": "https://demo-estetica-304.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000305,
+   "lat": 4.718859,
+   "lon": -74.098917,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 305",
+    "addr:street": "Calle 93 Sur",
+    "addr:housenumber": "89-33",
+    "phone": "+57 300 000 8778",
+    "website": "https://demo-gimnasio-305.example.com",
+    "email": "contacto@demo-gimnasio-305.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000306,
+   "lat": 4.615421,
+   "lon": -74.091456,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 306",
+    "addr:street": "Calle 69 Sur",
+    "addr:housenumber": "15-36",
+    "operator": "DEMO Operador 9"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000307,
+   "lat": 4.760283,
+   "lon": -74.081191,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 307",
+    "addr:street": "Calle 144 Sur",
+    "addr:housenumber": "86-62"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000308,
+   "lat": 4.710389,
+   "lon": -74.019145,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 308",
+    "addr:street": "Calle 11 Sur",
+    "addr:housenumber": "69-99",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000309,
+   "lat": 4.660149,
+   "lon": -74.042877,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 309",
+    "addr:street": "Calle 106 Sur",
+    "addr:housenumber": "92-24",
+    "website": "https://demo-consultorio-309.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000310,
+   "lat": 4.613665,
+   "lon": -74.17841,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 310",
+    "addr:street": "Calle 88 Sur",
+    "addr:housenumber": "52-60"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000311,
+   "lat": 4.63709,
+   "lon": -74.15845,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 311",
+    "addr:street": "Calle 55 Sur",
+    "addr:housenumber": "44-97",
+    "contact:mobile": "+57 300 000 7769",
+    "website": "https://demo-contaduria-311.example.com",
+    "contact:instagram": "@democontaduria311"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000312,
+   "lat": 4.53915,
+   "lon": -74.148592,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 312",
+    "addr:street": "Calle 174 Sur",
+    "addr:housenumber": "17-29",
+    "phone": "+57 300 000 4911"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000313,
+   "lat": 4.585147,
+   "lon": -74.154749,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 313",
+    "addr:street": "Calle 99 Sur",
+    "addr:housenumber": "79-45"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000314,
+   "lat": 4.66439,
+   "lon": -74.14724,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 314",
+    "addr:street": "Calle 21 Sur",
+    "addr:housenumber": "47-12",
+    "website": "https://demo-drogueria-314.example.com",
+    "email": "contacto@demo-drogueria-314.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000315,
+   "lat": 4.691002,
+   "lon": -74.127636,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 315",
+    "addr:street": "Calle 115 Sur",
+    "addr:housenumber": "76-81",
+    "website": "https://demo-papeleria-315.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000316,
+   "lat": 4.638589,
+   "lon": -74.108772,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 316",
+    "addr:street": "Calle 59 Sur",
+    "addr:housenumber": "28-81",
+    "website": "https://demo-floristeria-316.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000317,
+   "lat": 4.731135,
+   "lon": -74.079813,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 317",
+    "addr:street": "Calle 109 Sur",
+    "addr:housenumber": "48-18",
+    "contact:instagram": "@demominimercado317"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000318,
+   "lat": 4.726668,
+   "lon": -74.014729,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 318",
+    "addr:street": "Calle 15 Sur",
+    "addr:housenumber": "48-78",
+    "phone": "+57 601 457 2169"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000319,
+   "lat": 4.637629,
+   "lon": -74.045373,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 319",
+    "addr:street": "Calle 29 Sur",
+    "addr:housenumber": "52-31",
+    "phone": "+57 300 000 4181",
+    "website": "https://demo-celulares-319.example.com",
+    "contact:facebook": "democelulares319"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000320,
+   "lat": 4.610933,
+   "lon": -74.201953,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 320",
+    "addr:street": "Calle 180 Sur",
+    "addr:housenumber": "38-12",
+    "contact:facebook": "demoodontologia320",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000321,
+   "lat": 4.628879,
+   "lon": -74.144792,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 321",
+    "addr:street": "Calle 68 Sur",
+    "addr:housenumber": "72-55",
+    "email": "contacto@demo-veterinaria-321.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000322,
+   "lat": 4.526841,
+   "lon": -74.178825,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 322",
+    "addr:street": "Calle 117 Sur",
+    "addr:housenumber": "99-23",
+    "phone": "+57 601 357 6961"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000323,
+   "lat": 4.582876,
+   "lon": -74.154867,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 323",
+    "addr:street": "Calle 28 Sur",
+    "addr:housenumber": "68-82",
+    "phone": "+57 300 000 7371",
+    "website": "https://demo-barberia-323.example.com",
+    "contact:facebook": "demobarberia323"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000324,
+   "lat": 4.689222,
+   "lon": -74.15253,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 324",
+    "addr:street": "Calle 99 Sur",
+    "addr:housenumber": "21-65",
+    "contact:mobile": "+57 300 000 1210",
+    "website": "https://demo-estetica-324.example.com",
+    "email": "contacto@demo-estetica-324.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000325,
+   "lat": 4.683442,
+   "lon": -74.098785,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 325",
+    "addr:street": "Calle 53 Sur",
+    "addr:housenumber": "74-78"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000326,
+   "lat": 4.600293,
+   "lon": -74.121822,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 326",
+    "addr:street": "Calle 91 Sur",
+    "addr:housenumber": "49-23",
+    "contact:mobile": "+57 300 000 3068"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000327,
+   "lat": 4.760468,
+   "lon": -74.077194,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 327",
+    "addr:street": "Calle 14 Sur",
+    "addr:housenumber": "61-31",
+    "phone": "+57 601 445 8693",
+    "operator": "DEMO Operador 8"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000328,
+   "lat": 4.731999,
+   "lon": -74.014432,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 328",
+    "addr:street": "Calle 2 Sur",
+    "addr:housenumber": "51-82",
+    "email": "contacto@demo-panaderia-328.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000329,
+   "lat": 4.662109,
+   "lon": -74.068477,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 329",
+    "addr:street": "Calle 13 Sur",
+    "addr:housenumber": "52-40",
+    "contact:facebook": "democonsultorio329"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000330,
+   "lat": 4.581653,
+   "lon": -74.191283,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 330",
+    "addr:street": "Calle 123 Sur",
+    "addr:housenumber": "97-23",
+    "contact:instagram": "@demoinmobiliaria330"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000331,
+   "lat": 4.620392,
+   "lon": -74.131728,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 331",
+    "addr:street": "Calle 98 Sur",
+    "addr:housenumber": "1-19"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000332,
+   "lat": 4.513105,
+   "lon": -74.17783,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 332",
+    "addr:street": "Calle 140 Sur",
+    "addr:housenumber": "79-47"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000333,
+   "lat": 4.55835,
+   "lon": -74.131675,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 333",
+    "addr:street": "Calle 54 Sur",
+    "addr:housenumber": "86-64",
+    "contact:instagram": "@demoferreteria333",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000334,
+   "lat": 4.685254,
+   "lon": -74.130654,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 334",
+    "addr:street": "Calle 23 Sur",
+    "addr:housenumber": "48-45",
+    "phone": "+57 601 502 3421",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 20"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000335,
+   "lat": 4.688555,
+   "lon": -74.114585,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 335",
+    "addr:street": "Calle 105 Sur",
+    "addr:housenumber": "79-83"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000336,
+   "lat": 4.601225,
+   "lon": -74.102765,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 336",
+    "addr:street": "Calle 111 Sur",
+    "addr:housenumber": "8-33",
+    "operator": "DEMO Operador 13"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000337,
+   "lat": 4.733789,
+   "lon": -74.082285,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 337",
+    "addr:street": "Calle 168 Sur",
+    "addr:housenumber": "84-70",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000338,
+   "lat": 4.700837,
+   "lon": -74.040769,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 338",
+    "addr:street": "Calle 92 Sur",
+    "addr:housenumber": "43-10",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000339,
+   "lat": 4.642547,
+   "lon": -74.044921,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 339",
+    "addr:street": "Calle 94 Sur",
+    "addr:housenumber": "9-78",
+    "contact:mobile": "+57 300 000 8504",
+    "website": "https://demo-celulares-339.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000340,
+   "lat": 4.616551,
+   "lon": -74.182408,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 340",
+    "addr:street": "Calle 162 Sur",
+    "addr:housenumber": "12-92",
+    "phone": "+57 300 000 5708",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000341,
+   "lat": 4.624424,
+   "lon": -74.145429,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 341",
+    "addr:street": "Calle 43 Sur",
+    "addr:housenumber": "89-46",
+    "contact:facebook": "demoveterinaria341",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000342,
+   "lat": 4.548573,
+   "lon": -74.154268,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 342",
+    "addr:street": "Calle 152 Sur",
+    "addr:housenumber": "19-93",
+    "contact:mobile": "+57 300 000 2112",
+    "contact:facebook": "demopeluqueria342",
+    "email": "contacto@demo-peluqueria-342.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000343,
+   "lat": 4.555689,
+   "lon": -74.155485,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 343",
+    "addr:street": "Calle 127 Sur",
+    "addr:housenumber": "83-75",
+    "email": "contacto@demo-barberia-343.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000344,
+   "lat": 4.677581,
+   "lon": -74.152203,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 344",
+    "addr:street": "Calle 25 Sur",
+    "addr:housenumber": "59-53",
+    "phone": "+57 601 410 1502"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000345,
+   "lat": 4.704996,
+   "lon": -74.096174,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 345",
+    "addr:street": "Calle 19 Sur",
+    "addr:housenumber": "12-30",
+    "email": "contacto@demo-gimnasio-345.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000346,
+   "lat": 4.602289,
+   "lon": -74.119842,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 346",
+    "addr:street": "Calle 23 Sur",
+    "addr:housenumber": "73-84",
+    "phone": "+57 300 000 2061"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000347,
+   "lat": 4.737053,
+   "lon": -74.085225,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 347",
+    "addr:street": "Calle 65 Sur",
+    "addr:housenumber": "48-56",
+    "contact:mobile": "+57 300 000 2826",
+    "operator": "DEMO Operador 7"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000348,
+   "lat": 4.735465,
+   "lon": -74.019494,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 348",
+    "addr:street": "Calle 94 Sur",
+    "addr:housenumber": "31-92",
+    "contact:instagram": "@demopanaderia348",
+    "contact:facebook": "demopanaderia348"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000349,
+   "lat": 4.648904,
+   "lon": -74.050503,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 349",
+    "addr:street": "Calle 29 Sur",
+    "addr:housenumber": "59-81",
+    "website": "https://demo-consultorio-349.example.com",
+    "contact:instagram": "@democonsultorio349",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000350,
+   "lat": 4.584732,
+   "lon": -74.207284,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 350",
+    "addr:street": "Calle 93 Sur",
+    "addr:housenumber": "57-70",
+    "phone": "+57 300 000 6546",
+    "contact:instagram": "@demoinmobiliaria350"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000351,
+   "lat": 4.638498,
+   "lon": -74.135683,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 351",
+    "addr:street": "Calle 29 Sur",
+    "addr:housenumber": "8-65",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000352,
+   "lat": 4.546964,
+   "lon": -74.161563,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 352",
+    "addr:street": "Calle 34 Sur",
+    "addr:housenumber": "10-67",
+    "website": "https://demo-abogados-352.example.com",
+    "email": "contacto@demo-abogados-352.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000353,
+   "lat": 4.560293,
+   "lon": -74.139619,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 353",
+    "addr:street": "Calle 161 Sur",
+    "addr:housenumber": "84-75",
+    "contact:facebook": "demoferreteria353"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000354,
+   "lat": 4.655572,
+   "lon": -74.15542,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 354",
+    "addr:street": "Calle 100 Sur",
+    "addr:housenumber": "42-15"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000355,
+   "lat": 4.683279,
+   "lon": -74.121321,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 355",
+    "addr:street": "Calle 10 Sur",
+    "addr:housenumber": "37-66",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "operator": "DEMO Operador 6"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000356,
+   "lat": 4.600504,
+   "lon": -74.092064,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 356",
+    "addr:street": "Calle 60 Sur",
+    "addr:housenumber": "9-71",
+    "phone": "+57 601 703 4477"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000357,
+   "lat": 4.739051,
+   "lon": -74.061552,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 357",
+    "addr:street": "Calle 83 Sur",
+    "addr:housenumber": "5-62",
+    "contact:mobile": "+57 300 000 7767",
+    "contact:instagram": "@demominimercado357",
+    "operator": "DEMO Operador 20"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000358,
+   "lat": 4.732469,
+   "lon": -74.025734,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 358",
+    "addr:street": "Calle 122 Sur",
+    "addr:housenumber": "72-80",
+    "website": "https://demo-ropa-358.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000359,
+   "lat": 4.650888,
+   "lon": -74.046743,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 359",
+    "addr:street": "Calle 15 Sur",
+    "addr:housenumber": "22-39",
+    "phone": "+57 601 282 8412",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000360,
+   "lat": 4.61871,
+   "lon": -74.181517,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 360",
+    "addr:street": "Calle 25 Sur",
+    "addr:housenumber": "7-65",
+    "website": "https://demo-odontologia-360.example.com",
+    "contact:instagram": "@demoodontologia360"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000361,
+   "lat": 4.616803,
+   "lon": -74.148825,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 361",
+    "addr:street": "Calle 77 Sur",
+    "addr:housenumber": "85-93"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000362,
+   "lat": 4.530876,
+   "lon": -74.157668,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 362",
+    "addr:street": "Calle 112 Sur",
+    "addr:housenumber": "10-85",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000363,
+   "lat": 4.570955,
+   "lon": -74.132904,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 363",
+    "addr:street": "Calle 19 Sur",
+    "addr:housenumber": "90-17",
+    "email": "contacto@demo-barberia-363.example.com"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000364,
+   "lat": 4.678365,
+   "lon": -74.144099,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 364",
+    "addr:street": "Calle 47 Sur",
+    "addr:housenumber": "60-51"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000365,
+   "lat": 4.716004,
+   "lon": -74.1207,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 365",
+    "addr:street": "Calle 93 Sur",
+    "addr:housenumber": "49-94",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000366,
+   "lat": 4.635382,
+   "lon": -74.105361,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 366",
+    "addr:street": "Calle 166 Sur",
+    "addr:housenumber": "10-70"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000367,
+   "lat": 4.749268,
+   "lon": -74.099295,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 367",
+    "addr:street": "Calle 174 Sur",
+    "addr:housenumber": "21-60",
+    "phone": "+57 601 499 4342"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000368,
+   "lat": 4.710231,
+   "lon": -74.017137,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 368",
+    "addr:street": "Calle 154 Sur",
+    "addr:housenumber": "59-95",
+    "contact:facebook": "demopanaderia368"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000369,
+   "lat": 4.632802,
+   "lon": -74.06981,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 369",
+    "addr:street": "Calle 45 Sur",
+    "addr:housenumber": "11-99",
+    "phone": "+57 300 000 3844",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000370,
+   "lat": 4.617384,
+   "lon": -74.171202,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 370",
+    "addr:street": "Calle 39 Sur",
+    "addr:housenumber": "61-52",
+    "contact:mobile": "+57 300 000 6716",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000371,
+   "lat": 4.606498,
+   "lon": -74.166344,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 371",
+    "addr:street": "Calle 160 Sur",
+    "addr:housenumber": "7-99",
+    "website": "https://demo-contaduria-371.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000372,
+   "lat": 4.549583,
+   "lon": -74.147794,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 372",
+    "addr:street": "Calle 40 Sur",
+    "addr:housenumber": "89-64",
+    "phone": "+57 601 217 4758",
+    "contact:instagram": "@demoabogados372",
+    "email": "contacto@demo-abogados-372.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000373,
+   "lat": 4.568087,
+   "lon": -74.141263,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 373",
+    "addr:street": "Calle 60 Sur",
+    "addr:housenumber": "80-21",
+    "contact:facebook": "demoferreteria373",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000374,
+   "lat": 4.668293,
+   "lon": -74.139966,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 374",
+    "addr:street": "Calle 129 Sur",
+    "addr:housenumber": "55-76",
+    "contact:instagram": "@demodrogueria374"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000375,
+   "lat": 4.707648,
+   "lon": -74.105411,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 375",
+    "addr:street": "Calle 48 Sur",
+    "addr:housenumber": "27-49",
+    "contact:instagram": "@demopapeleria375",
+    "contact:facebook": "demopapeleria375"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000376,
+   "lat": 4.627248,
+   "lon": -74.101922,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 376",
+    "addr:street": "Calle 80 Sur",
+    "addr:housenumber": "51-50"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000377,
+   "lat": 4.737011,
+   "lon": -74.074822,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 377",
+    "addr:street": "Calle 63 Sur",
+    "addr:housenumber": "60-13",
+    "phone": "+57 300 000 2959"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000378,
+   "lat": 4.702998,
+   "lon": -74.023642,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 378",
+    "addr:street": "Calle 160 Sur",
+    "addr:housenumber": "50-65"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000379,
+   "lat": 4.660813,
+   "lon": -74.055133,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 379",
+    "addr:street": "Calle 115 Sur",
+    "addr:housenumber": "93-50",
+    "website": "https://demo-celulares-379.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000380,
+   "lat": 4.616386,
+   "lon": -74.204842,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 380",
+    "addr:street": "Calle 120 Sur",
+    "addr:housenumber": "88-89",
+    "contact:mobile": "+57 300 000 2122",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000381,
+   "lat": 4.628635,
+   "lon": -74.14056,
+   "tags": {
+    "amenity": "veterinary",
+    "name": "DEMO Veterinaria Kennedy 381",
+    "addr:street": "Calle 9 Sur",
+    "addr:housenumber": "37-95",
+    "contact:mobile": "+57 300 000 2745"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000382,
+   "lat": 4.525475,
+   "lon": -74.147724,
+   "tags": {
+    "shop": "hairdresser",
+    "name": "DEMO Peluqueria Ciudad Bolivar 382",
+    "addr:street": "Calle 87 Sur",
+    "addr:housenumber": "47-25",
+    "contact:facebook": "demopeluqueria382"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000383,
+   "lat": 4.565469,
+   "lon": -74.150941,
+   "tags": {
+    "shop": "barber",
+    "name": "DEMO Barberia Tunjuelito 383",
+    "addr:street": "Calle 48 Sur",
+    "addr:housenumber": "78-46"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000384,
+   "lat": 4.684697,
+   "lon": -74.149478,
+   "tags": {
+    "shop": "beauty",
+    "name": "DEMO Estetica Fontibon 384",
+    "addr:street": "Calle 64 Sur",
+    "addr:housenumber": "4-42"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000385,
+   "lat": 4.713947,
+   "lon": -74.102695,
+   "tags": {
+    "leisure": "fitness_centre",
+    "name": "DEMO Gimnasio Engativa 385",
+    "addr:street": "Calle 169 Sur",
+    "addr:housenumber": "54-17",
+    "contact:facebook": "demogimnasio385"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000386,
+   "lat": 4.638081,
+   "lon": -74.116918,
+   "tags": {
+    "amenity": "restaurant",
+    "name": "DEMO Restaurante Puente Aranda 386",
+    "addr:street": "Calle 82 Sur",
+    "addr:housenumber": "35-56",
+    "phone": "+57 601 561 7462",
+    "contact:instagram": "@demorestaurante386"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000387,
+   "lat": 4.765492,
+   "lon": -74.069777,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Suba 387",
+    "addr:street": "Calle 63 Sur",
+    "addr:housenumber": "83-16"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000388,
+   "lat": 4.733588,
+   "lon": -74.044656,
+   "tags": {
+    "shop": "bakery",
+    "name": "DEMO Panaderia Usaquen 388",
+    "addr:street": "Calle 139 Sur",
+    "addr:housenumber": "92-53",
+    "website": "https://demo-panaderia-388.example.com"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000389,
+   "lat": 4.668187,
+   "lon": -74.035074,
+   "tags": {
+    "amenity": "doctors",
+    "name": "DEMO Consultorio Chapinero 389",
+    "addr:street": "Calle 139 Sur",
+    "addr:housenumber": "84-16"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000390,
+   "lat": 4.613494,
+   "lon": -74.180822,
+   "tags": {
+    "office": "estate_agent",
+    "name": "DEMO Inmobiliaria Bosa 390",
+    "addr:street": "Calle 93 Sur",
+    "addr:housenumber": "32-18",
+    "contact:mobile": "+57 300 000 6359",
+    "contact:facebook": "demoinmobiliaria390"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000391,
+   "lat": 4.602102,
+   "lon": -74.135604,
+   "tags": {
+    "office": "accountant",
+    "name": "DEMO Contaduria Kennedy 391",
+    "addr:street": "Calle 164 Sur",
+    "addr:housenumber": "52-49"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000392,
+   "lat": 4.539349,
+   "lon": -74.167539,
+   "tags": {
+    "office": "lawyer",
+    "name": "DEMO Abogados Ciudad Bolivar 392",
+    "addr:street": "Calle 91 Sur",
+    "addr:housenumber": "74-23",
+    "contact:facebook": "demoabogados392",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000393,
+   "lat": 4.559084,
+   "lon": -74.151663,
+   "tags": {
+    "shop": "hardware",
+    "name": "DEMO Ferreteria Tunjuelito 393",
+    "addr:street": "Calle 139 Sur",
+    "addr:housenumber": "47-94",
+    "website": "https://demo-ferreteria-393.example.com",
+    "contact:facebook": "demoferreteria393"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000394,
+   "lat": 4.667173,
+   "lon": -74.166307,
+   "tags": {
+    "amenity": "pharmacy",
+    "name": "DEMO Drogueria Fontibon 394",
+    "addr:street": "Calle 135 Sur",
+    "addr:housenumber": "38-75",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000395,
+   "lat": 4.719698,
+   "lon": -74.112661,
+   "tags": {
+    "shop": "stationery",
+    "name": "DEMO Papeleria Engativa 395",
+    "addr:street": "Calle 98 Sur",
+    "addr:housenumber": "82-19",
+    "website": "https://demo-papeleria-395.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000396,
+   "lat": 4.620012,
+   "lon": -74.103262,
+   "tags": {
+    "shop": "florist",
+    "name": "DEMO Floristeria Puente Aranda 396",
+    "addr:street": "Calle 37 Sur",
+    "addr:housenumber": "78-58"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000397,
+   "lat": 4.764739,
+   "lon": -74.085532,
+   "tags": {
+    "shop": "convenience",
+    "name": "DEMO Minimercado Suba 397",
+    "addr:street": "Calle 15 Sur",
+    "addr:housenumber": "27-74",
+    "contact:mobile": "+57 300 000 9231"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000398,
+   "lat": 4.708535,
+   "lon": -74.043872,
+   "tags": {
+    "shop": "clothes",
+    "name": "DEMO Ropa Usaquen 398",
+    "addr:street": "Calle 113 Sur",
+    "addr:housenumber": "4-64",
+    "contact:mobile": "+57 300 000 5245",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 1000399,
+   "lat": 4.662107,
+   "lon": -74.033871,
+   "tags": {
+    "shop": "mobile_phone",
+    "name": "DEMO Celulares Chapinero 399",
+    "addr:street": "Calle 43 Sur",
+    "addr:housenumber": "96-40"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000000,
+   "lat": 4.592953,
+   "lon": -74.203966,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 000",
+    "addr:street": "Calle 167 Sur",
+    "addr:housenumber": "7-19",
+    "website": "https://demo-odontologia-0.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00",
+    "email": "duplicado@demo-exacto.co"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1500000,
+   "lat": 4.592953,
+   "lon": -74.203966,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 000",
+    "addr:street": "Calle 167 Sur",
+    "addr:housenumber": "7-19",
+    "website": "https://demo-odontologia-0.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 9000001,
+   "lat": 4.592973,
+   "lon": -74.203966,
+   "tags": {
+    "amenity": "dentist",
+    "name": "DEMO Odontologia Bosa 000",
+    "addr:street": "Calle 167 Sur",
+    "addr:housenumber": "7-19",
+    "website": "https://demo-duplicado.example.com",
+    "opening_hours": "Mo-Sa 08:00-18:00"
+   }
+  },
+  {
+   "type": "node",
+   "id": 9000002,
+   "lat": 4.71,
+   "lon": -74.07,
+   "tags": {
+    "amenity": "cafe",
+    "name": "DEMO Cafeteria Otra Sede",
+    "phone": "+57 300 000 1234",
+    "email": "sedes@demo.example.com"
+   }
+  }
+ ]
+}
