@@ -259,15 +259,23 @@ CADENAS_NACIONALES = {
 # --------------------------------------------------------------------------
 # Parametros de red
 # --------------------------------------------------------------------------
+# Mirrors de Overpass. No se incluye overpass.osm.jp: su certificado TLS no
+# corresponde al dominio, asi que toda peticion falla por verificacion.
 OVERPASS_ENDPOINTS = [
     "https://overpass-api.de/api/interpreter",
-    "https://overpass.kumi.systems/api/interpreter",
     "https://overpass.private.coffee/api/interpreter",
-    "https://overpass.osm.jp/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
 ]
 OVERPASS_TIMEOUT = int(os.environ.get("GORYXIA_OVERPASS_TIMEOUT", "180"))
-OVERPASS_PAUSA_SEG = float(os.environ.get("GORYXIA_OVERPASS_PAUSE", "4"))
-OVERPASS_REINTENTOS = int(os.environ.get("GORYXIA_OVERPASS_RETRIES", "4"))
+OVERPASS_PAUSA_SEG = float(os.environ.get("GORYXIA_OVERPASS_PAUSE", "2"))
+OVERPASS_REINTENTOS = int(os.environ.get("GORYXIA_OVERPASS_RETRIES", "3"))
+# Tope de espera entre reintentos: sin el, el backoff exponencial llega a
+# esperas de medio minuto que multiplicadas por 127 mosaicos son horas.
+OVERPASS_ESPERA_MAX = float(os.environ.get("GORYXIA_OVERPASS_MAX_WAIT", "20"))
+# Fallos consecutivos tras los que un mirror se aparta durante la corrida.
+OVERPASS_FALLOS_PARA_APARTAR = 3
+# Presupuesto de tiempo de la fase Overpass, en minutos. 0 = sin limite.
+OVERPASS_BUDGET_MIN = float(os.environ.get("GORYXIA_OVERPASS_BUDGET_MIN", "75"))
 
 USER_AGENT = os.environ.get(
     "GORYXIA_USER_AGENT",
@@ -342,6 +350,7 @@ class Ajustes:
     scrapear_webs: bool = True
     max_webs: int = 4000
     minutos_web: float = WEB_SCRAPE_BUDGET_MIN
+    minutos_overpass: float = OVERPASS_BUDGET_MIN
     usar_cache: bool = True
     limite: int | None = None
 

@@ -100,6 +100,9 @@ def construir_parser() -> argparse.ArgumentParser:
     parser.add_argument("--minutos-web", type=float, default=45.0, metavar="MIN",
                         help="Tope de tiempo de la fase de raspado web "
                              "(por defecto 45 minutos; 0 = sin limite)")
+    parser.add_argument("--minutos-overpass", type=float, default=75.0, metavar="MIN",
+                        help="Tope de tiempo de la fase de OpenStreetMap "
+                             "(por defecto 75 minutos; 0 = sin limite)")
 
     parser.add_argument("--sin-cache", action="store_true",
                         help="Ignorar la cache local y volver a descargar todo")
@@ -134,6 +137,7 @@ def main(argv: list[str] | None = None) -> int:
         scrapear_webs=not args.sin_web,
         max_webs=args.max_webs,
         minutos_web=args.minutos_web,
+        minutos_overpass=args.minutos_overpass,
         usar_cache=not args.sin_cache,
         limite=args.limite,
     )

@@ -185,7 +185,8 @@ Todo se ajusta por variables de entorno; ninguna es obligatoria.
 | `GORYXIA_REF_LAT` / `GORYXIA_REF_LON` | Plaza de Bolívar | Punto desde el que se mide *Distancia aprox. (km)* |
 | `GORYXIA_WEB_WORKERS` | `8` | Hilos del raspador de sitios web |
 | `GORYXIA_WEB_BUDGET_MIN` | `45` | Tope de minutos de la fase de raspado web (`0` = sin límite) |
-| `GORYXIA_OVERPASS_PAUSE` | `4` | Segundos de pausa entre consultas a Overpass |
+| `GORYXIA_OVERPASS_PAUSE` | `2` | Segundos de pausa entre consultas a Overpass |
+| `GORYXIA_OVERPASS_BUDGET_MIN` | `75` | Tope de minutos de la fase de OpenStreetMap (`0` = sin límite) |
 | `GORYXIA_DATA_DIR` | `data/` | Carpeta de salida |
 
 Ejemplo para medir distancias desde tu oficina en vez de desde el centro:
@@ -256,15 +257,22 @@ no deben mezclarse con la base de producción.
 
 ## Rendimiento y buenas prácticas
 
-**Cuánto tarda.** Un barrido completo de Bogotá sin raspado web son ~127
-consultas a Overpass; entre 10 y 25 minutos según lo cargado que esté el
-servidor público. Con raspado web (recomendado) se añaden hasta 45 minutos más.
+**Cuánto tarda.** Un barrido completo de Bogotá son ~127 consultas a Overpass.
+Con los mirrors públicos respondiendo bien, entre 15 y 30 minutos; si están
+congestionados, bastante más. El raspado web añade hasta 45 minutos.
 
-Esa segunda fase tiene un **presupuesto de tiempo global** (`--minutos-web`,
-45 por defecto): al agotarse conserva todo lo que ya consiguió y sigue con el
-resto del pipeline, para que un puñado de sitios lentos no secuestre la
-corrida. El resumen final dice cuántos sitios quedaron sin analizar; la caché
-hace que la siguiente corrida arranque donde quedó esta.
+**Las dos fases largas tienen presupuesto de tiempo** (`--minutos-overpass`,
+75 por defecto, y `--minutos-web`, 45): al agotarse conservan todo lo ya
+obtenido y siguen con el resto del pipeline. Nunca se pierde el trabajo hecho,
+y como la caché persiste, la siguiente corrida retoma donde quedó la anterior
+en vez de empezar de cero. Correr el pipeline dos o tres veces seguidas es una
+forma perfectamente válida de completar la ciudad.
+
+**Mirrors de Overpass.** El cliente rota entre tres servidores públicos y lleva
+cuenta de la salud de cada uno: un `429`/`504` es congestión pasajera y se
+reintenta con espera acotada, mientras que un error de TLS o DNS es permanente
+y aparta ese mirror para el resto de la corrida. Sin esto, un mirror con el
+certificado roto se lleva por delante horas de barrido.
 
 **Caché.** Todo lo descargado se guarda en `data/cache/`. Volver a correr el
 pipeline reutiliza lo que ya bajó, así que iterar sobre el scoring o los

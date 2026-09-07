@@ -34,6 +34,10 @@ on:
         description: "Tope de minutos de la fase de raspado web (0 = sin limite)"
         type: string
         default: "45"
+      minutos_overpass:
+        description: "Tope de minutos de la fase de OpenStreetMap (0 = sin limite)"
+        type: string
+        default: "75"
       solo_contactables:
         description: "Exportar solo negocios con celular, fijo o correo"
         type: boolean
@@ -93,6 +97,7 @@ jobs:
           [ "${{ inputs.solo_contactables }}" = "true" ] && ARGS="$ARGS --solo-contactables"
           ARGS="$ARGS --max-webs ${{ inputs.max_webs }}"
           ARGS="$ARGS --minutos-web ${{ inputs.minutos_web }}"
+          ARGS="$ARGS --minutos-overpass ${{ inputs.minutos_overpass }}"
           echo "Ejecutando: python -m goryxia $ARGS"
           python -m goryxia $ARGS | tee corrida.log
 

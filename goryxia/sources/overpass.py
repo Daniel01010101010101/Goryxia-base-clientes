@@ -28,6 +28,8 @@ from ..config import (
     CATEGORIA_POR_OSM,
     LOCALIDAD_BBOXES,
     OVERPASS_ENDPOINTS,
+    OVERPASS_ESPERA_MAX,
+    OVERPASS_FALLOS_PARA_APARTAR,
     OVERPASS_PAUSA_SEG,
     OVERPASS_REINTENTOS,
     OVERPASS_TIMEOUT,
@@ -130,7 +132,21 @@ def mosaicos(bbox: tuple[float, float, float, float],
 # Cliente HTTP
 # ---------------------------------------------------------------------------
 class ClienteOverpass:
-    """Cliente con rotacion de mirrors, reintentos exponenciales y cache en disco."""
+    """Cliente de Overpass con cache en disco y rotacion de mirrors por salud.
+
+    Los mirrors publicos fallan de formas muy distintas y conviene tratarlas
+    distinto:
+
+      * Un 429/504 es congestion pasajera: se espera (con tope, porque un
+        backoff exponencial sin limite multiplicado por 127 mosaicos son horas)
+        y se prueba otro mirror.
+      * Un error de TLS o de DNS es permanente durante la corrida: insistir es
+        tiempo perdido, asi que el mirror se aparta de inmediato.
+
+    Un mirror que acumula fallos consecutivos queda apartado el resto de la
+    corrida. Si se apartan todos, se reinicia el conteo y se vuelve a intentar
+    con todos antes que rendirse.
+    """
 
     def __init__(self, usar_cache: bool = True, cache_dir: Path = CACHE_OVERPASS):
         self.usar_cache = usar_cache
@@ -139,6 +155,7 @@ class ClienteOverpass:
         self.sesion = requests.Session()
         self.sesion.headers.update({"User-Agent": USER_AGENT})
         self.endpoints = list(OVERPASS_ENDPOINTS)
+        self.fallos_por_endpoint: dict[str, int] = {e: 0 for e in self.endpoints}
         self.peticiones = 0
         self.aciertos_cache = 0
         self.fallos = 0
@@ -146,6 +163,24 @@ class ClienteOverpass:
     def _ruta_cache(self, consulta: str) -> Path:
         clave = hashlib.sha1(consulta.encode("utf-8")).hexdigest()
         return self.cache_dir / f"{clave}.json"
+
+    def _endpoints_sanos(self) -> list[str]:
+        sanos = [e for e in self.endpoints
+                 if self.fallos_por_endpoint[e] < OVERPASS_FALLOS_PARA_APARTAR]
+        if not sanos:
+            log.warning("Todos los mirrors de Overpass estaban apartados; "
+                        "se reinicia el conteo y se vuelve a intentar")
+            for endpoint in self.endpoints:
+                self.fallos_por_endpoint[endpoint] = 0
+            sanos = list(self.endpoints)
+        return sanos
+
+    def _penalizar(self, endpoint: str, permanente: bool = False) -> None:
+        if permanente:
+            self.fallos_por_endpoint[endpoint] = OVERPASS_FALLOS_PARA_APARTAR
+            log.warning("Mirror apartado por error permanente: %s", endpoint)
+        else:
+            self.fallos_por_endpoint[endpoint] += 1
 
     def ejecutar(self, consulta: str) -> dict | None:
         """Ejecuta una consulta Overpass QL. Devuelve el JSON o None si fallo."""
@@ -159,7 +194,10 @@ class ClienteOverpass:
 
         espera = OVERPASS_PAUSA_SEG
         for intento in range(1, OVERPASS_REINTENTOS + 1):
-            endpoint = self.endpoints[(self.peticiones + intento) % len(self.endpoints)]
+            sanos = self._endpoints_sanos()
+            # Round-robin puro: el primer intento usa el mirror principal y
+            # cada reintento pasa al siguiente sano.
+            endpoint = sanos[self.peticiones % len(sanos)]
             try:
                 self.peticiones += 1
                 respuesta = self.sesion.post(
@@ -168,21 +206,30 @@ class ClienteOverpass:
                     timeout=OVERPASS_TIMEOUT + 30,
                 )
                 if respuesta.status_code in (429, 504):
+                    self._penalizar(endpoint)
                     log.info("Overpass %s ocupado (%s), reintento %s/%s",
                              endpoint, respuesta.status_code, intento, OVERPASS_REINTENTOS)
-                    time.sleep(espera + random.uniform(0, 2))
+                    time.sleep(min(espera, OVERPASS_ESPERA_MAX) + random.uniform(0, 1))
                     espera *= 2
                     continue
+
                 respuesta.raise_for_status()
                 datos = respuesta.json()
+                self.fallos_por_endpoint[endpoint] = 0  # el mirror respondio bien
                 if self.usar_cache:
                     ruta.write_text(json.dumps(datos), encoding="utf-8")
                 time.sleep(OVERPASS_PAUSA_SEG)
                 return datos
+
+            except requests.exceptions.SSLError as exc:
+                # Certificado invalido: no se arregla reintentando.
+                self._penalizar(endpoint, permanente=True)
+                log.warning("Error de TLS en %s: %s", endpoint, exc)
             except (requests.RequestException, json.JSONDecodeError) as exc:
+                self._penalizar(endpoint)
                 log.warning("Fallo Overpass (%s) intento %s/%s: %s",
                             endpoint, intento, OVERPASS_REINTENTOS, exc)
-                time.sleep(espera + random.uniform(0, 2))
+                time.sleep(min(espera, OVERPASS_ESPERA_MAX) + random.uniform(0, 1))
                 espera *= 2
 
         self.fallos += 1
@@ -290,8 +337,17 @@ def elemento_a_negocio(elemento: dict) -> Negocio | None:
 def recolectar(ajustes: Ajustes,
                cliente: ClienteOverpass | None = None,
                progreso=None) -> list[Negocio]:
-    """Recorre las localidades solicitadas y devuelve los negocios encontrados."""
+    """Recorre las localidades solicitadas y devuelve los negocios encontrados.
+
+    La fase tiene un presupuesto de tiempo: los mirrors publicos pueden
+    degradarse a mitad del barrido y no vale la pena quedarse esperandolos
+    indefinidamente. Al agotarse se devuelve lo recolectado hasta el momento;
+    como los mosaicos ya resueltos quedan en cache, la siguiente corrida
+    retoma donde quedo esta en vez de empezar de cero.
+    """
     cliente = cliente or ClienteOverpass(usar_cache=ajustes.usar_cache)
+    inicio = time.monotonic()
+    limite = (ajustes.minutos_overpass or 0) * 60
     categorias = ajustes.categorias_activas
 
     tiles: list[tuple[str, tuple[float, float, float, float]]] = []
@@ -311,6 +367,13 @@ def recolectar(ajustes: Ajustes,
     vistos: set[str] = set()
 
     for indice, (localidad, tile) in enumerate(tiles, start=1):
+        if limite and time.monotonic() - inicio > limite:
+            log.warning("Presupuesto de %s min agotado en el mosaico %s/%s. "
+                        "Se conservan los %s negocios recolectados; la cache "
+                        "permite retomar en la siguiente corrida.",
+                        ajustes.minutos_overpass, indice, len(tiles), len(negocios))
+            break
+
         consulta = construir_consulta(tile, categorias)
         datos = cliente.ejecutar(consulta)
         if progreso:
