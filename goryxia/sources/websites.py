@@ -28,6 +28,7 @@ from .. import phones
 from ..config import (
     CACHE_DIR,
     USER_AGENT,
+    WEB_SCRAPE_BUDGET_MIN,
     WEB_SCRAPE_MAX_BYTES,
     WEB_SCRAPE_TIMEOUT,
     WEB_SCRAPE_WORKERS,
@@ -290,11 +291,15 @@ class RaspadorWeb:
 def enriquecer_negocios(negocios: list[Negocio],
                         max_sitios: int = 4000,
                         usar_cache: bool = True,
+                        presupuesto_minutos: float = WEB_SCRAPE_BUDGET_MIN,
                         progreso=None) -> dict[str, int]:
     """Enriquece en paralelo los negocios que tienen sitio web.
 
     Prioriza los que aun NO tienen celular: son los que mas suben de score.
-    Devuelve un resumen de cuanto mejoro la base.
+
+    La fase tiene un presupuesto de tiempo global: un punado de sitios lentos
+    no puede secuestrar la corrida. Al agotarse, se conserva todo lo ya
+    obtenido y se sigue con el resto del pipeline.
     """
     candidatos = [n for n in negocios if n.sitio_web]
     # Primero los que no tienen celular (mayor ganancia por peticion).
@@ -305,14 +310,20 @@ def enriquecer_negocios(negocios: list[Negocio],
         return {"sitios": 0, "nuevos_celulares": 0, "nuevos_correos": 0, "nuevas_redes": 0}
 
     raspador = RaspadorWeb(usar_cache=usar_cache)
-    resumen = {"sitios": len(candidatos), "nuevos_celulares": 0,
-               "nuevos_correos": 0, "nuevas_redes": 0, "whatsapp_confirmado": 0}
+    resumen = {"sitios": len(candidatos), "analizados": 0, "nuevos_celulares": 0,
+               "nuevos_correos": 0, "nuevas_redes": 0, "whatsapp_confirmado": 0,
+               "sin_analizar_por_tiempo": 0}
 
-    log.info("Raspando %s sitios web con %s hilos", len(candidatos), WEB_SCRAPE_WORKERS)
+    log.info("Raspando %s sitios web con %s hilos (presupuesto: %s min)",
+             len(candidatos), WEB_SCRAPE_WORKERS, presupuesto_minutos)
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=WEB_SCRAPE_WORKERS) as pool:
-        futuros = {pool.submit(raspador.analizar, n.sitio_web): n for n in candidatos}
-        for indice, futuro in enumerate(concurrent.futures.as_completed(futuros), 1):
+    pool = concurrent.futures.ThreadPoolExecutor(max_workers=WEB_SCRAPE_WORKERS)
+    futuros = {pool.submit(raspador.analizar, n.sitio_web): n for n in candidatos}
+    limite = presupuesto_minutos * 60 if presupuesto_minutos else None
+
+    try:
+        for indice, futuro in enumerate(
+                concurrent.futures.as_completed(futuros, timeout=limite), 1):
             negocio = futuros[futuro]
             try:
                 resultado = futuro.result()
@@ -320,6 +331,7 @@ def enriquecer_negocios(negocios: list[Negocio],
                 log.debug("Error analizando %s: %s", negocio.sitio_web, exc)
                 continue
 
+            resumen["analizados"] += 1
             tenia_celular = negocio.tiene_celular
             tenia_correo = negocio.tiene_correo
             tenia_redes = negocio.tiene_redes
@@ -351,6 +363,17 @@ def enriquecer_negocios(negocios: list[Negocio],
 
             if progreso:
                 progreso(indice, len(candidatos), resumen["nuevos_celulares"])
+
+    except concurrent.futures.TimeoutError:
+        pendientes = len(candidatos) - resumen["analizados"]
+        resumen["sin_analizar_por_tiempo"] = pendientes
+        log.warning("Presupuesto de %s min agotado: quedaron %s sitios sin analizar. "
+                    "Se conserva todo lo obtenido hasta aqui.",
+                    presupuesto_minutos, pendientes)
+    finally:
+        for pendiente in futuros:
+            pendiente.cancel()
+        pool.shutdown(wait=False, cancel_futures=True)
 
     raspador.guardar_cache()
     log.info("Web scraping: +%s celulares, +%s correos, +%s redes (%s errores)",

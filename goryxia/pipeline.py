@@ -159,7 +159,9 @@ def ejecutar(ajustes: Ajustes,
         log.info("Enriqueciendo desde sitios web oficiales")
         resultado.ganancia_web = websites.enriquecer_negocios(
             negocios, max_sitios=ajustes.max_webs,
-            usar_cache=ajustes.usar_cache, progreso=_progreso_web)
+            usar_cache=ajustes.usar_cache,
+            presupuesto_minutos=ajustes.minutos_web,
+            progreso=_progreso_web)
 
     # 5. Scoring comercial ---------------------------------------------------
     log.info("Calculando score, prioridad y servicios sugeridos")

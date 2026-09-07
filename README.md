@@ -47,6 +47,7 @@ python -m goryxia --muy-alta-prioridad    # solo odontólogos, veterinarias, res
 python -m goryxia --solo-contactables     # descarta lo que no tiene ningún contacto
 python -m goryxia --localidades Bosa Kennedy --limite 5000
 python -m goryxia --sin-web               # más rápido, pero rinde muchos menos celulares
+python -m goryxia --minutos-web 20        # acota la fase de raspado a 20 minutos
 python -m goryxia --con-google            # añade Google Places (requiere API key)
 ```
 
@@ -183,6 +184,7 @@ Todo se ajusta por variables de entorno; ninguna es obligatoria.
 | `SOCRATA_APP_TOKEN` | vacío | Sube el límite de peticiones de Socrata |
 | `GORYXIA_REF_LAT` / `GORYXIA_REF_LON` | Plaza de Bolívar | Punto desde el que se mide *Distancia aprox. (km)* |
 | `GORYXIA_WEB_WORKERS` | `8` | Hilos del raspador de sitios web |
+| `GORYXIA_WEB_BUDGET_MIN` | `45` | Tope de minutos de la fase de raspado web (`0` = sin límite) |
 | `GORYXIA_OVERPASS_PAUSE` | `4` | Segundos de pausa entre consultas a Overpass |
 | `GORYXIA_DATA_DIR` | `data/` | Carpeta de salida |
 
@@ -255,9 +257,14 @@ no deben mezclarse con la base de producción.
 ## Rendimiento y buenas prácticas
 
 **Cuánto tarda.** Un barrido completo de Bogotá sin raspado web son ~127
-consultas a Overpass, entre 10 y 15 minutos. Con raspado web (recomendado),
-depende de cuántos sitios haya: unos 4.000 sitios con 8 hilos añaden entre 20 y
-40 minutos.
+consultas a Overpass; entre 10 y 25 minutos según lo cargado que esté el
+servidor público. Con raspado web (recomendado) se añaden hasta 45 minutos más.
+
+Esa segunda fase tiene un **presupuesto de tiempo global** (`--minutos-web`,
+45 por defecto): al agotarse conserva todo lo que ya consiguió y sigue con el
+resto del pipeline, para que un puñado de sitios lentos no secuestre la
+corrida. El resumen final dice cuántos sitios quedaron sin analizar; la caché
+hace que la siguiente corrida arranque donde quedó esta.
 
 **Caché.** Todo lo descargado se guarda en `data/cache/`. Volver a correr el
 pipeline reutiliza lo que ya bajó, así que iterar sobre el scoring o los

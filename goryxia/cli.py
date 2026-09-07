@@ -97,6 +97,9 @@ def construir_parser() -> argparse.ArgumentParser:
                              "(mas rapido, pero se pierden muchos celulares)")
     parser.add_argument("--max-webs", type=int, default=4000, metavar="N",
                         help="Maximo de sitios web a analizar (por defecto 4000)")
+    parser.add_argument("--minutos-web", type=float, default=45.0, metavar="MIN",
+                        help="Tope de tiempo de la fase de raspado web "
+                             "(por defecto 45 minutos; 0 = sin limite)")
 
     parser.add_argument("--sin-cache", action="store_true",
                         help="Ignorar la cache local y volver a descargar todo")
@@ -130,6 +133,7 @@ def main(argv: list[str] | None = None) -> int:
         usar_datos_abiertos=not args.sin_datos_abiertos,
         scrapear_webs=not args.sin_web,
         max_webs=args.max_webs,
+        minutos_web=args.minutos_web,
         usar_cache=not args.sin_cache,
         limite=args.limite,
     )
@@ -184,10 +188,13 @@ def _imprimir_informe(resultado) -> None:
               ", ".join(f"{k}={v}" for k, v in resultado.duplicados.items()))
     if resultado.ganancia_web:
         g = resultado.ganancia_web
-        print(f"Sitios web analizados: {g.get('sitios', 0)} -> "
+        print(f"Sitios web analizados: {g.get('analizados', 0)}/{g.get('sitios', 0)} -> "
               f"+{g.get('nuevos_celulares', 0)} celulares, "
               f"+{g.get('nuevos_correos', 0)} correos, "
               f"+{g.get('nuevas_redes', 0)} redes")
+        if g.get("sin_analizar_por_tiempo"):
+            print(f"  {g['sin_analizar_por_tiempo']} sitios quedaron sin analizar "
+                  "por el tope de tiempo (--minutos-web)")
 
     if resumen.por_localidad:
         print("-" * ancho)

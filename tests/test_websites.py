@@ -1,7 +1,14 @@
 """Pruebas del extractor de contactos desde HTML (sin salir a la red)."""
+import time
 import unittest
+from unittest import mock
 
-from goryxia.sources.websites import extraer_de_html
+from goryxia.models import Negocio
+from goryxia.sources.websites import (
+    ResultadoWeb,
+    enriquecer_negocios,
+    extraer_de_html,
+)
 
 HTML = """
 <html><head><title>Demo</title></head><body>
@@ -54,3 +61,46 @@ class TestExtraccionWeb(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestPresupuestoDeTiempo(unittest.TestCase):
+    """La fase de raspado no puede quedarse colgada por sitios lentos."""
+
+    def _negocios(self, cantidad):
+        return [Negocio(nombre=f"Negocio {i}", sitio_web=f"https://sitio{i}.co")
+                for i in range(cantidad)]
+
+    def test_devuelve_resultados_parciales_al_agotar_el_presupuesto(self):
+        def lento(self, url):
+            time.sleep(2)
+            return ResultadoWeb(url=url, moviles=["573001234567"])
+
+        negocios = self._negocios(40)
+        inicio = time.monotonic()
+        with mock.patch("goryxia.sources.websites.RaspadorWeb.analizar", lento), \
+             mock.patch("goryxia.sources.websites.RaspadorWeb.guardar_cache"):
+            resumen = enriquecer_negocios(negocios, usar_cache=False,
+                                          presupuesto_minutos=0.05)  # 3 segundos
+        transcurrido = time.monotonic() - inicio
+
+        self.assertLess(transcurrido, 20, "El presupuesto no corto la fase")
+        self.assertLess(resumen["analizados"], len(negocios))
+        self.assertGreater(resumen["sin_analizar_por_tiempo"], 0)
+
+    def test_conserva_lo_ya_obtenido_al_cortar(self):
+        def rapido_luego_lento(self, url):
+            if url.endswith(("0.co", "1.co", "2.co")):
+                return ResultadoWeb(url=url, moviles=["573001234567"])
+            time.sleep(5)
+            return ResultadoWeb(url=url)
+
+        negocios = self._negocios(12)
+        with mock.patch("goryxia.sources.websites.RaspadorWeb.analizar",
+                        rapido_luego_lento), \
+             mock.patch("goryxia.sources.websites.RaspadorWeb.guardar_cache"):
+            resumen = enriquecer_negocios(negocios, usar_cache=False,
+                                          presupuesto_minutos=0.03)  # ~2 segundos
+
+        self.assertGreaterEqual(resumen["nuevos_celulares"], 1)
+        con_celular = [n for n in negocios if n.tiene_celular]
+        self.assertGreaterEqual(len(con_celular), 1)

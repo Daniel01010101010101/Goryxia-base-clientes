@@ -277,6 +277,9 @@ USER_AGENT = os.environ.get(
 WEB_SCRAPE_WORKERS = int(os.environ.get("GORYXIA_WEB_WORKERS", "8"))
 WEB_SCRAPE_TIMEOUT = int(os.environ.get("GORYXIA_WEB_TIMEOUT", "12"))
 WEB_SCRAPE_MAX_BYTES = 900_000
+# Presupuesto de tiempo global de la fase de raspado, en minutos. Evita que un
+# punado de sitios lentos secuestre la corrida completa. 0 = sin limite.
+WEB_SCRAPE_BUDGET_MIN = float(os.environ.get("GORYXIA_WEB_BUDGET_MIN", "45"))
 
 GOOGLE_PLACES_API_KEY = os.environ.get("GOOGLE_PLACES_API_KEY", "").strip()
 GOOGLE_PLACES_HABILITADO = bool(GOOGLE_PLACES_API_KEY)
@@ -338,6 +341,7 @@ class Ajustes:
     usar_datos_abiertos: bool = True
     scrapear_webs: bool = True
     max_webs: int = 4000
+    minutos_web: float = WEB_SCRAPE_BUDGET_MIN
     usar_cache: bool = True
     limite: int | None = None
 

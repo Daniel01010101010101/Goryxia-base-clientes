@@ -30,6 +30,10 @@ on:
         description: "Maximo de sitios web a analizar"
         type: string
         default: "4000"
+      minutos_web:
+        description: "Tope de minutos de la fase de raspado web (0 = sin limite)"
+        type: string
+        default: "45"
       solo_contactables:
         description: "Exportar solo negocios con celular, fijo o correo"
         type: boolean
@@ -88,6 +92,7 @@ jobs:
           [ "${{ inputs.raspar_webs }}" != "true" ] && ARGS="$ARGS --sin-web"
           [ "${{ inputs.solo_contactables }}" = "true" ] && ARGS="$ARGS --solo-contactables"
           ARGS="$ARGS --max-webs ${{ inputs.max_webs }}"
+          ARGS="$ARGS --minutos-web ${{ inputs.minutos_web }}"
           echo "Ejecutando: python -m goryxia $ARGS"
           python -m goryxia $ARGS | tee corrida.log
 
